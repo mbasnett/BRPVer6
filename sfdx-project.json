@@ -1,0 +1,13 @@
+{
+    "packageDirectories": [
+        { 
+            "path": "unpackaged", 
+            "default": true 
+        }
+    ],
+
+    "namespace": "",
+    "sfdcLoginUrl": "https://test.salesforce.com",
+    "sourceApiVersion": "44.0"
+}
+© 2019 GitHub, Inc.
