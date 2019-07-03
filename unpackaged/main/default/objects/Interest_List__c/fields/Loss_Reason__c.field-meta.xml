@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+        <fullName>Loss_Reason__c</fullName>
+        <externalId>false</externalId>
+        <label>Loss Reason</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <controllingField>Stage__c</controllingField>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Lot Transfer / Lot Assignment</fullName>
+                    <default>false</default>
+                    <label>Lot Transfer / Lot Assignment</label>
+                </value>
+                <value>
+                    <fullName>Correction</fullName>
+                    <default>false</default>
+                    <label>Correction</label>
+                </value>
+                <value>
+                    <fullName>Contingency Expiration</fullName>
+                    <default>false</default>
+                    <label>Contingency Expiration</label>
+                </value>
+                <value>
+                    <fullName>Loan Denial</fullName>
+                    <default>false</default>
+                    <label>Loan Denial</label>
+                </value>
+                <value>
+                    <fullName>Appraisal Issue</fullName>
+                    <default>false</default>
+                    <label>Appraisal Issue</label>
+                </value>
+                <value>
+                    <fullName>Right of Rescission</fullName>
+                    <default>false</default>
+                    <label>Right of Rescission</label>
+                </value>
+                <value>
+                    <fullName>Medical Reasons</fullName>
+                    <default>false</default>
+                    <label>Medical Reasons</label>
+                </value>
+                <value>
+                    <fullName>Changed Mind</fullName>
+                    <default>false</default>
+                    <label>Changed Mind</label>
+                </value>
+                <value>
+                    <fullName>Change in Employment / Relocation</fullName>
+                    <default>false</default>
+                    <label>Change in Employment / Relocation</label>
+                </value>
+                <value>
+                    <fullName>Change in Marital Status</fullName>
+                    <default>false</default>
+                    <label>Change in Marital Status</label>
+                </value>
+                <value>
+                    <fullName>Unsatisfied with Product</fullName>
+                    <default>false</default>
+                    <label>Unsatisfied with Product</label>
+                </value>
+                <value>
+                    <fullName>Homesite Conditions</fullName>
+                    <default>false</default>
+                    <label>Homesite Conditions</label>
+                </value>
+                <value>
+                    <fullName>Customer Satisfaction</fullName>
+                    <default>false</default>
+                    <label>Customer Satisfaction</label>
+                </value>
+                <value>
+                    <fullName>Concerns with Disclosure</fullName>
+                    <default>false</default>
+                    <label>Concerns with Disclosure</label>
+                </value>
+                <value>
+                    <fullName>Purchased with Competitor</fullName>
+                    <default>false</default>
+                    <label>Purchased with Competitor</label>
+                </value>
+                <value>
+                    <fullName>Discontinued Product</fullName>
+                    <default>false</default>
+                    <label>Discontinued Product</label>
+                </value>
+                <value>
+                    <fullName>Offer Not Accepted</fullName>
+                    <default>false</default>
+                    <label>Offer Not Accepted</label>
+                </value>
+                <value>
+                    <fullName>Nonperformance</fullName>
+                    <default>false</default>
+                    <label>Nonperformance</label>
+                </value>
+                <value>
+                    <fullName>Material Out of Stock</fullName>
+                    <default>false</default>
+                    <label>Material Out of Stock</label>
+                </value>
+                <value>
+                    <fullName>.Cost Objections</fullName>
+                    <default>false</default>
+                    <label>.Cost Objections</label>
+                </value>
+                <value>
+                    <fullName>.Just Looking</fullName>
+                    <default>false</default>
+                    <label>.Just Looking</label>
+                </value>
+                <value>
+                    <fullName>.Not Interested</fullName>
+                    <default>false</default>
+                    <label>.Not Interested</label>
+                </value>
+                <value>
+                    <fullName>.No Response</fullName>
+                    <default>false</default>
+                    <label>.No Response</label>
+                </value>
+                <value>
+                    <fullName>.Out of Market</fullName>
+                    <default>false</default>
+                    <label>.Out of Market</label>
+                </value>
+                <value>
+                    <fullName>.Timeline</fullName>
+                    <default>false</default>
+                    <label>.Timeline</label>
+                </value>
+                <value>
+                    <fullName>.Other Builder</fullName>
+                    <default>false</default>
+                    <label>.Other Builder</label>
+                </value>
+            </valueSetDefinition>
+            <valueSettings>
+                <controllingFieldValue>Lead Lost</controllingFieldValue>
+                <valueName>Lot Transfer / Lot Assignment</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Lead Lost</controllingFieldValue>
+                <valueName>Correction</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Lead Lost</controllingFieldValue>
+                <valueName>Contingency Expiration</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Lead Lost</controllingFieldValue>
+                <valueName>Loan Denial</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Lead Lost</controllingFieldValue>
+                <valueName>Appraisal Issue</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Lead Lost</controllingFieldValue>
+                <valueName>Right of Rescission</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Lead Lost</controllingFieldValue>
+                <valueName>Medical Reasons</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Lead Lost</controllingFieldValue>
+                <valueName>Changed Mind</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Lead Lost</controllingFieldValue>
+                <valueName>Change in Employment / Relocation</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Lead Lost</controllingFieldValue>
+                <valueName>Change in Marital Status</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Lead Lost</controllingFieldValue>
+                <valueName>Unsatisfied with Product</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Lead Lost</controllingFieldValue>
+                <valueName>Homesite Conditions</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Lead Lost</controllingFieldValue>
+                <valueName>Customer Satisfaction</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Lead Lost</controllingFieldValue>
+                <valueName>Concerns with Disclosure</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Lead Lost</controllingFieldValue>
+                <valueName>Purchased with Competitor</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Lead Lost</controllingFieldValue>
+                <valueName>Discontinued Product</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Lead Lost</controllingFieldValue>
+                <valueName>Offer Not Accepted</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Lead Lost</controllingFieldValue>
+                <valueName>Nonperformance</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Lead Lost</controllingFieldValue>
+                <valueName>Material Out of Stock</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Lead Lost</controllingFieldValue>
+                <valueName>.Cost Objections</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Lead Lost</controllingFieldValue>
+                <valueName>.Just Looking</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Lead Lost</controllingFieldValue>
+                <valueName>.Not Interested</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Lead Lost</controllingFieldValue>
+                <valueName>.No Response</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Lead Lost</controllingFieldValue>
+                <valueName>.Out of Market</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Lead Lost</controllingFieldValue>
+                <valueName>.Timeline</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Lead Lost</controllingFieldValue>
+                <valueName>.Other Builder</valueName>
+            </valueSettings>
+        </valueSet>
+    </CustomField>

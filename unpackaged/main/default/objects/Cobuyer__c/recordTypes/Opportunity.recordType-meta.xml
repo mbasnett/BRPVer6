@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+        <fullName>Opportunity</fullName>
+        <active>true</active>
+        <compactLayoutAssignment>Home_Sales_Compact_Layout</compactLayoutAssignment>
+        <label>Opportunity</label>
+    </RecordType>

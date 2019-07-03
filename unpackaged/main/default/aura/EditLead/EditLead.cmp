@@ -1,0 +1,199 @@
+<aura:component implements="flexipage:availableForRecordHome,force:hasRecordId,force:lightningQuickAction" access="global" controller="quickLeadCreate">
+
+<aura:attribute name="record" type="Lead"/> 
+<aura:attribute name="simpleRecord" type="Lead"/> 
+<aura:attribute name="recordError" type="String"/>
+<aura:attribute name="LeadsourcePicklist" type="String[]" />
+<aura:attribute name="AgegroupPicklist" type="String[]" />
+<aura:attribute name="HouseholdIncomePicklist" type="String[]" />
+<aura:attribute name="OwnorRentPicklist" type="String[]" />
+<aura:attribute name="TransfertoareaPicklist" type="String[]" />
+<aura:attribute name="VisitBrookfielddcPicklist" type="String[]" />
+<aura:attribute name="NoofchildrenPicklist" type="String[]" />
+<aura:attribute name="PurchasetimePicklist" type="String[]" />
+<aura:attribute name="TimehousehuntPicklist" type="String[]" />
+<aura:handler name="init" value="{!this}"  action="{!c.fetchPicklist}"/>
+<aura:attribute name="PriceRangePicklist" type="String[]" />
+<aura:attribute name="BedroomPicklist" type="String[]" />
+<aura:attribute name="BathroomPicklist" type="String[]" />
+<aura:attribute name="AreaofInterestpicklist" type="List"/>
+<aura:attribute name="Selectedareaofinterestpicklist" type="List"/>
+
+<force:recordData aura:id="recordHandler" 
+	 recordId="{!v.recordId}" 
+     layoutType="FULL" 
+     targetRecord="{!v.record}" 
+     targetFields="{!v.simpleRecord}" 
+     targetError="{!v.recordError}" 
+     mode="EDIT" 
+     fields="Owner.Name,MaritalStatus__c,Realtor__c"
+     recordUpdated="{!c.handleRecordUpdated}" 
+  /> 
+   <!-- Display an editing form --> 
+    <div class="slds-form--stacked" > 
+        <lightning:card iconName="action:edit" title="Edit Lead" > 
+            <div class="slds-p-horizontal--small"> 
+                <table width="100%">
+                    <tr>
+                        <td width="20%"><lightning:input label="Name" value="{!v.simpleRecord.Name}" readonly="true" /> </td>
+                        <td width="5%"></td>
+                        <td width="20%"><lightning:input label="Lead Owner" value="{!v.simpleRecord.Owner.Name}" readonly="true"/></td>
+                    </tr>
+                    <tr>
+                        <td width="20%"><lightning:input  label="Email" value="{!v.simpleRecord.Email}"/></td>
+                        <td width="5%"></td>
+                        <td width="20%"><lightning:input  label="Phone" value="{!v.simpleRecord.Phone}"/></td>
+                    </tr>
+                    <tr>
+                        <td width="20%"><lightning:input  label="Mobile" value="{!v.simpleRecord.MobilePhone}"/></td>
+                        <td width="5%"></td>
+                        <td width= "20%">
+                              <lightning:select label="Lead Source" name="LeadsourceSelect" aura:id="LeadsourceSelect" >
+                                <aura:iteration items="{!v.LeadsourcePicklist}" var="item">
+            				  <option value="{!item}">{!item}</option>
+         				      </aura:iteration>
+    			              </lightning:select>                           
+                        </td>
+                    </tr>
+                    <tr>
+                        <td width="20%"><lightning:input  label="Lead source Detail" value="{!v.simpleRecord.Lead_Source_Detail__c}"/></td>
+                        <td width="5%"></td>
+                        <td width="20%">
+                            <lightning:input  label="Are you a Realtor" type="checkbox" name="chkRealtor" aura:id="chkRealtor" checked="{v.simpleRecord.Realtor__c}"/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td width="20%">
+                            <lightning:dualListbox  label="Area of Interest" aura:id="AreaofInterestSleect" onchange="{!c.handleSelectionchange}" 
+                                                   name="AreaofInterestSleect" sourceLabel="Available" selectedLabel="Selected"
+                                                   options="{!v.AreaofInterestpicklist}" value="{!v.Selectedareaofinterestpicklist}"/>
+                        </td>
+                        <td width="20%"></td>
+                        <td width="5%"></td>
+                    </tr>
+                    <tr>
+                <td colspan="3">
+                    &nbsp;
+				<lightning:card title="Additional Details">
+                        <table width="100%">
+                        <tr>
+                            <td width="20%">
+                                <lightning:select label="Age Group" name="AgeGroupSelect" aura:id="AgeGroupSelect" >
+                                <aura:iteration items="{!v.AgegroupPicklist}" var="item">
+            				  <option value="{!item}">{!item}</option>
+         				      </aura:iteration>
+    			              </lightning:select>
+                            </td>
+                        	<td width="5%"></td>
+                        	<td width="20%">
+                                <lightning:input  label="Marital Status" type="checkbox" name="chkMaritalstatus" aura:id="chkMaritalstatus" checked="{v.simpleRecord.MaritalStatus__c}"/>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width="20%">
+                                <lightning:input  label="Which describes your household?" type="Picklist" value="{!v.simpleRecord.Household_Income__c}"/>
+                            </td>
+                        	<td width="5%"></td>
+                        	<td width="20%">
+                                <lightning:select label="What is your present Housing status?" name="OwnorRentSelect" aura:id="OwnorRentSelect" >
+                                <aura:iteration items="{!v.OwnorRentPicklist}" var="item">
+            				  <option value="{!item}">{!item}</option>
+         				      </aura:iteration>
+    			              </lightning:select>
+                                </td>
+                        </tr>    
+						<tr>   
+                            
+                    		<td width="20%">
+                                <lightning:select label ="Are you transferring to the area?" name="TransfertoAreaSelect" aura:id="TransfertoAreaSelect" >
+                                <aura:iteration items="{!v.TransfertoareaPicklist}" var="item">
+            				  <option value="{!item}">{!item}</option>
+         				      </aura:iteration>
+    			              </lightning:select>
+                            </td>
+                        	<td width="5%"></td>
+                        	<td width="20%">
+                                <lightning:input  type="Date" label="Transferring to Area Date" value="{!v.simpleRecord.Transferring_to_area_date__c}"/>
+                            </td>
+                        </tr>
+                        <tr>
+                              <td width="20%">
+                                <lightning:select label="How long have you been househunting for?" name="TimehousehuntSelect" aura:id="TimehousehuntSelect" >
+                                <aura:iteration items="{!v.TimehousehuntPicklist}" var="item">
+            				  <option value="{!item}">{!item}</option>
+         				      </aura:iteration>
+    			              </lightning:select>
+                            </td>
+                        	<td width="5%"></td>
+                        	<td width="20%">
+                                <lightning:select label="Did you visit BrookfieldDC.com during your search?" name="VisitBrookfielddcSelect" aura:id="VisitBrookfielddcSelect" >
+                                <aura:iteration items="{!v.VisitBrookfielddcPicklist}" var="item">
+            				  <option value="{!item}">{!item}</option>
+         				      </aura:iteration>
+    			              </lightning:select></td>
+                        </tr>
+                        <tr>
+                            <td width="20%">
+                                <lightning:select label="Household Income" name="HouseholdincomeSelect" aura:id="HouseholdincomeSelect" >
+                                <aura:iteration items="{!v.HouseholdIncomePicklist}" var="item">
+            				  <option value="{!item}">{!item}</option>
+         				      </aura:iteration>
+    			              </lightning:select>
+                            </td>
+                        	<td width="5%"></td>
+                        	<td width="20%">
+                                <lightning:select label="Desired Occupancy" name="PurchaseTimeSelect" aura:id="PurchaseTimeSelect" >
+                                <aura:iteration items="{!v.PurchasetimePicklist}" var="item">
+            				  <option value="{!item}">{!item}</option>
+         				      </aura:iteration>
+    			              </lightning:select>
+                            </td>
+                            </tr>
+                        <tr>
+                            <td width="20%">
+                                <lightning:select label="Dependent children living with you" name="NoofcildrenSelect" aura:id="NoofcildrenSelect" >
+                                <aura:iteration items="{!v.NoofchildrenPicklist}" var="item">
+            				  <option value="{!item}">{!item}</option>
+         				      </aura:iteration>
+    			              </lightning:select>
+                            </td>
+                        	<td width="5%"></td>
+                        	<td width="20%">
+                                <lightning:select label="Desired Price range" name="PriceRangeSelect" aura:id="PriceRangeSelect" >
+                                <aura:iteration items="{!v.PriceRangePicklist}" var="item">
+            				  <option value="{!item}">{!item}</option>
+         				      </aura:iteration>
+    			              </lightning:select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width="20%">
+                                <lightning:select label="How many bedrooms do you desire?" name="BedroomSelect" aura:id="BedroomSelect" >
+                                <aura:iteration items="{!v.BedroomPicklist}" var="item">
+            				  <option value="{!item}">{!item}</option>
+         				      </aura:iteration>
+    			              </lightning:select>
+                            </td>
+                        	<td width="5%"></td>
+                        	<td width="20%">
+                              <lightning:select label="How many bathrooms do you desire?" name="BathroomSelect" aura:id="BathroomSelect" >
+                                <aura:iteration items="{!v.BathroomPicklist}" var="item">
+            				  <option value="{!item}">{!item}</option>
+         				      </aura:iteration>
+    			              </lightning:select>
+                            </td>
+                        </tr>
+                    </table>
+                    </lightning:card>
+                        </td>
+                    </tr>
+                </table>
+               <br/>
+            </div>
+            <div class="slds-align_absolute-center" >
+               <lightning:button label="Save" variant="brand" onclick="{!c.handleSaveRecord}" />
+            </div>
+        </lightning:card>
+    </div> 
+
+</aura:component>

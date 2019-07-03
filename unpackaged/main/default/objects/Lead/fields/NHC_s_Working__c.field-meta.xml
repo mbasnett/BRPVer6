@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+        <fullName>NHC_s_Working__c</fullName>
+        <externalId>false</externalId>
+        <label>NHC’s Working</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Aleks Korowski</fullName>
+                    <default>false</default>
+                    <label>Aleks Korowski</label>
+                </value>
+                <value>
+                    <fullName>Amy Franks</fullName>
+                    <default>false</default>
+                    <label>Amy Franks</label>
+                </value>
+                <value>
+                    <fullName>Angie Cole</fullName>
+                    <default>false</default>
+                    <label>Angie Cole</label>
+                </value>
+                <value>
+                    <fullName>Angie Miller</fullName>
+                    <default>false</default>
+                    <label>Angie Miller</label>
+                </value>
+                <value>
+                    <fullName>Belinda Shuler</fullName>
+                    <default>false</default>
+                    <label>Belinda Shuler</label>
+                </value>
+                <value>
+                    <fullName>Brian Blair</fullName>
+                    <default>false</default>
+                    <label>Brian Blair</label>
+                </value>
+                <value>
+                    <fullName>David Matthys</fullName>
+                    <default>false</default>
+                    <label>David Matthys</label>
+                </value>
+                <value>
+                    <fullName>Dori Conway</fullName>
+                    <default>false</default>
+                    <label>Dori Conway</label>
+                </value>
+                <value>
+                    <fullName>James Haugen</fullName>
+                    <default>false</default>
+                    <label>James Haugen</label>
+                </value>
+                <value>
+                    <fullName>Janice Wunning</fullName>
+                    <default>false</default>
+                    <label>Janice Wunning</label>
+                </value>
+                <value>
+                    <fullName>Kendra Johnson</fullName>
+                    <default>false</default>
+                    <label>Kendra Johnson</label>
+                </value>
+                <value>
+                    <fullName>Kevin Bendy</fullName>
+                    <default>false</default>
+                    <label>Kevin Bendy</label>
+                </value>
+                <value>
+                    <fullName>Lara Ingalsbe</fullName>
+                    <default>false</default>
+                    <label>Lara Ingalsbe</label>
+                </value>
+                <value>
+                    <fullName>Linda Lahrman</fullName>
+                    <default>false</default>
+                    <label>Linda Lahrman</label>
+                </value>
+                <value>
+                    <fullName>Lou Niemeyer</fullName>
+                    <default>false</default>
+                    <label>Lou Niemeyer</label>
+                </value>
+                <value>
+                    <fullName>Matt Schroeder</fullName>
+                    <default>false</default>
+                    <label>Matt Schroeder</label>
+                </value>
+                <value>
+                    <fullName>Randy Perry</fullName>
+                    <default>false</default>
+                    <label>Randy Perry</label>
+                </value>
+                <value>
+                    <fullName>Steve Chase</fullName>
+                    <default>false</default>
+                    <label>Steve Chase</label>
+                </value>
+                <value>
+                    <fullName>Tina Spenser</fullName>
+                    <default>false</default>
+                    <label>Tina Spencer</label>
+                </value>
+                <value>
+                    <fullName>Vern Carlson</fullName>
+                    <default>false</default>
+                    <label>Vern Carlson</label>
+                </value>
+                <value>
+                    <fullName>Jesse Miller</fullName>
+                    <default>false</default>
+                    <label>Jesse Miller</label>
+                </value>
+                <value>
+                    <fullName>Joelle Hogg</fullName>
+                    <default>false</default>
+                    <label>Joelle Hogg</label>
+                </value>
+                <value>
+                    <fullName>Michael Wagner</fullName>
+                    <default>false</default>
+                    <label>Michael Wagner</label>
+                </value>
+                <value>
+                    <fullName>Nichole Knight</fullName>
+                    <default>false</default>
+                    <label>Nichole Knight</label>
+                </value>
+                <value>
+                    <fullName>Stephanie McKinney</fullName>
+                    <default>false</default>
+                    <label>Stephanie McKinney</label>
+                </value>
+                <value>
+                    <fullName>Sylvia Grubh</fullName>
+                    <default>false</default>
+                    <label>Sylvia Ingalsbe</label>
+                </value>
+                <value>
+                    <fullName>Dustin Compton</fullName>
+                    <default>false</default>
+                    <label>Dustin Compton</label>
+                </value>
+                <value>
+                    <fullName>Dennis Dresch</fullName>
+                    <default>false</default>
+                    <label>Dennis Dresch</label>
+                </value>
+                <value>
+                    <fullName>Boris Shorter</fullName>
+                    <default>false</default>
+                    <label>Boris Shorter</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+        <visibleLines>4</visibleLines>
+    </CustomField>

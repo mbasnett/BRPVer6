@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Assigned Model --></label>
+        <lookupFilter>
+            <errorMessage><!-- The model should belong to the parent subdivision of the lot. --></errorMessage>
+        </lookupFilter>
+        <name>Assigned_Model__c</name>
+        <relationshipLabel><!-- Lots --></relationshipLabel>
+    </CustomFieldTranslation>

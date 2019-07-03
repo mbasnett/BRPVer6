@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+        <fullName>Toronto_Woodhaven_Interest_List</fullName>
+        <filterScope>Queue</filterScope>
+        <label>Toronto Woodhaven</label>
+        <queue>Toronto_Woodhaven</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </ListView>

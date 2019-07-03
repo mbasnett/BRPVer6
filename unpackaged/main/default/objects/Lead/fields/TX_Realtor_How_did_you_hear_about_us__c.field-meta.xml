@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+        <fullName>TX_Realtor_How_did_you_hear_about_us__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>for Traffic Card Information (TX)</inlineHelpText>
+        <label>Realtor How did you hear about us? (TX)</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>TextArea</type>
+    </CustomField>

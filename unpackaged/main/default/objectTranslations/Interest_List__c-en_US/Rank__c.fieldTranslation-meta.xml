@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Rank --></label>
+        <name>Rank__c</name>
+        <picklistValues>
+            <masterLabel>A - Ready, Willing, Able</masterLabel>
+            <translation><!-- A - Ready, Willing, Able --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>B - Two of These</masterLabel>
+            <translation><!-- B - Two of These --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>C - Ready or Willing or Able</masterLabel>
+            <translation><!-- C - Ready or Willing or Able --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>D - Cold</masterLabel>
+            <translation><!-- D - Cold --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>M - Marketing Only</masterLabel>
+            <translation><!-- M - Marketing Only --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>W - Web Lead</masterLabel>
+            <translation><!-- W - Web Lead --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

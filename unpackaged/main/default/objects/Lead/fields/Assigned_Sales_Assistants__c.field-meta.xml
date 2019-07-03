@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+        <fullName>Assigned_Sales_Assistants__c</fullName>
+        <externalId>false</externalId>
+        <label>Assigned Sales Assistants</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Alexis Hall</fullName>
+                    <default>false</default>
+                    <label>Alexis Hall</label>
+                </value>
+                <value>
+                    <fullName>Amy Franks</fullName>
+                    <default>false</default>
+                    <label>Amy Franks</label>
+                </value>
+                <value>
+                    <fullName>Cathy Chadwick</fullName>
+                    <default>false</default>
+                    <label>Cathy Chadwick</label>
+                </value>
+                <value>
+                    <fullName>Chandler Meadows</fullName>
+                    <default>false</default>
+                    <label>Chandler Meadows</label>
+                </value>
+                <value>
+                    <fullName>Diane Tidwell</fullName>
+                    <default>false</default>
+                    <label>Diane Tidwell</label>
+                </value>
+                <value>
+                    <fullName>Deborah Powell</fullName>
+                    <default>false</default>
+                    <label>Deborah Powell</label>
+                </value>
+                <value>
+                    <fullName>Gina Iaccino</fullName>
+                    <default>false</default>
+                    <label>Gina Iaccino</label>
+                </value>
+                <value>
+                    <fullName>Jill Brodsky</fullName>
+                    <default>false</default>
+                    <label>Jill Brodsky</label>
+                </value>
+                <value>
+                    <fullName>Melissa Stein</fullName>
+                    <default>false</default>
+                    <label>Melissa Stein</label>
+                </value>
+                <value>
+                    <fullName>Paige Kamel</fullName>
+                    <default>false</default>
+                    <label>Paige Kamel</label>
+                </value>
+                <value>
+                    <fullName>Randy Perry</fullName>
+                    <default>false</default>
+                    <label>Randy Perry</label>
+                </value>
+                <value>
+                    <fullName>Rauly Williams</fullName>
+                    <default>false</default>
+                    <label>Rauly Williams</label>
+                </value>
+                <value>
+                    <fullName>Sue Walker</fullName>
+                    <default>false</default>
+                    <label>Sue Walker</label>
+                </value>
+                <value>
+                    <fullName>Tonya McKim</fullName>
+                    <default>false</default>
+                    <label>Tonya McKim</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+        <visibleLines>4</visibleLines>
+    </CustomField>

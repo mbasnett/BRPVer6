@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+        <fullName>DC_Mayfair_Lead</fullName>
+        <filterScope>Queue</filterScope>
+        <label>DC Mayfair</label>
+        <queue>DC_Mayfair</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </ListView>

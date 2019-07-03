@@ -1,0 +1,211 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes" access="global" controller="quickLeadCreate" >
+    <aura:handler name="init" value="{!this}" action="{!c.loadoptions}" />
+    <aura:handler name="change" value="{!v.SalesOffices}" action="{!c.loadcommunity}" />
+    <aura:handler name="change" value="{!v.Mktcommunity}" action="{!c.loadproject}" />
+    <aura:attribute name="recordId" type="String"/>
+    <aura:handler name="closemodaldialog" action="{! c.closedialog}" event="c:closePopup" />
+    <aura:attribute name="newLead" type="Lead" default="{'sobjectType': 'Lead',
+                                                              'FirstName':'',
+                                                              'LastName':'',
+                                                              'Email':'',
+                                                              'Phone':'',
+                                                              'Mobile':'',
+                                                              'Sales_office_mapping__c':'',
+                                                              'Community_Text__c':''
+                                                              }"/>
+    <aura:attribute name="newInterestList" type="Interest_List__c" default="{'sobjectType': 'Interest_List__c',
+                                                              'Marketing_Community__c':'',
+                                                              'Subdivision__c':'',
+                                                              'Sales_Office__c':'',
+                                                              'Visit_Date__c':'',
+                                                              'Stage__c':'New'
+                                                              }"/>
+    <aura:attribute name="newCobuyer" type="Cobuyer__c" default="{'sobjectType': 'Cobuyer__c',
+                                                              'First_Name__c	':'',
+                                                              'Last_Name__c':'' 
+                                                              }"/>
+    <aura:attribute name="ExstLead" type="List"/>
+    <aura:attribute name="ExstAcct" type="List"/>
+    <aura:attribute name="Subdiv" type="List"/>
+    <aura:attribute name="Mktcommunity" type="List"/>
+    <aura:attribute name="SalesOffices" type="List"/>
+    <aura:attribute name="AcctId" type="String"/>
+    <aura:attribute name="LeadId" type="String"/>
+    <div aura:Id="quickForm" >
+    <lightning:card title="New Lead">
+    <table width="1000px" >
+        <tr>
+            <td width="10%"></td>
+            <td width="20%"><lightning:input label="First Name" aura:Id="Firstname"  value="{!v.newLead.FirstName}"/></td> 
+            <td width="10%"></td>
+            <td width="20%"><lightning:input label="Last Name" aura:Id="LastName" value="{!v.newLead.LastName}" required="true"/></td>
+            <td width="10%"></td>
+        </tr>
+        <tr>
+            <td width="10%"></td>
+            <td width="20%"><lightning:input  aura:Id="Email" label="Email"  value="{!v.newLead.Email}"/></td>
+            <td width="10%"></td>
+            <td width="20%"><lightning:input  aura:Id="Phone" label="Phone" value="{!v.newLead.Phone}"/></td>
+        </tr>
+        <tr>
+            <td width="10%"></td>
+            <td width="20%"><lightning:input label="Mobile" aura:Id="Mobile" value="{!v.newLead.Mobile}"/></td>
+            <td width="10%"></td>
+            <td width="20%">
+                <lightning:select label="SalesOffice" name="MktSalesOffSelect" aura:id="MktSalesOffSelect" required="true" 
+                                  onchange="{!c.loadcommunity}"  >
+         				<aura:iteration items="{!v.SalesOffices}" var="item">
+            				<option text="{!item.Sales_Office__r.Name}" value="{!item.Sales_Office__r.Id + '~' + item.Sales_Office__r.Name}"/>
+         				</aura:iteration>
+    		</lightning:select>
+            </td>
+        </tr> 
+        <tr>
+            <td width="10%"></td>
+            <td width="20%">
+            <lightning:select label="Marketing Community" name="MktcommSelect" aura:id="MktcommSelect" required="true" 
+                      onchange="{!c.loadproject}" >
+                		<aura:iteration items="{!v.Mktcommunity}" var="item">
+            				<option text="{!item.Name}" value="{!item.Id + '~' + item.Name}"/>
+         				</aura:iteration>
+    		</lightning:select></td>
+            <td width="10%"></td>
+            <td width="20%">
+            <lightning:select label="Subdivision" name="SubdivSelect" aura:id="SubdivSelect"  >
+         				<aura:iteration items="{!v.Subdiv}" var="item">
+            				<option text="{!item.Name}" value="{!item.Id}"/>
+         				</aura:iteration>
+    		</lightning:select>
+            </td>
+        </tr>
+        <tr>
+            
+            <td width="10%"></td>
+            <td width="20%"><lightning:input aura:Id="Visitdate" label="Visit Date"  type="date" value="{!v.newInterestList.Visit_Date__c}" /></td>
+            <td width="10%"></td>
+            <td width="20%"></td>
+        </tr>
+        <tr>
+            <td width="10%"></td>
+            <td width="20%"><lightning:input aura:Id="CobuyerFName" label="Co-buyer First Name"   value="{!v.newCobuyer.First_Name__c}" /></td>
+            <td width="10%"></td>
+            <td width="20%"><lightning:input aura:Id="CobuyerLName" label="Co-buyer Last Name"   value="{!v.newCobuyer.Last_Name__c}" /></td>
+        </tr>
+       <tr>
+           <td colspan ="4" ><div class="slds-align_absolute-center"><lightning:Button label="Save"  title ="Save Lead" onclick="{!c.Validate}" class="slds-m-top_small" variant="brand"/></div></td>
+       </tr>
+    </table>
+    </lightning:card>
+	</div>
+    <div aura:Id="searchResults" class="slds-hide">
+        <table class="slds-table slds-table_bordered slds-max-medium-table_stacked-horizontal slds-p-horizontal_small" role="grid"> 
+             <thead> 
+                 <tr class="slds-text-title_caps"> 
+                     <th class="slds-cell-shrink" scope="col"> 
+                         <div class="slds-truncate" title="Name">Name</div> 
+                     </th> 
+                     <th class="slds-cell-shrink" scope="col"> 
+                         <div class="slds-truncate" title="City">Email</div> 
+                     </th> 
+                     <th class="slds-cell-shrink" scope="col"> 
+                         <div class="slds-truncate" title="Country">Phone</div> 
+                     </th> 
+                     <th class="slds-cell-shrink" scope="col"> 
+                         <div class="slds-truncate" title="Country">Mobile</div> 
+                     </th> 
+                     <th class="slds-cell-shrink" scope="col"> 
+                         <div class="slds-truncate" title="Country">Address</div> 
+                     </th> 
+                 </tr> 
+             </thead> 
+			 <tbody>
+                <aura:if isTrue="{!not(empty(v.ExstLead))}" >
+                    <tr class="slds-text-heading_medium"><td colspan="4"><b>
+                        <aura:if isTrue="{!(empty(v.newLead.Email))}">
+                        	{!'Leads matching lastname ' + v.newLead.LastName}
+                        </aura:if>
+                        <aura:if isTrue="{!not(empty(v.newLead.Email))}">
+                            {!'Leads matching email address ' + v.newLead.email}
+                        </aura:if>
+                        </b></td></tr>
+                    <br></br>
+                	<aura:iteration items="{!v.ExstLead}" var="ld">
+            		<tr class="slds-hint-parent"> 
+                         <td >   
+                             <div class="slds-truncate" ><ui:inputRadio aura:id="ldradio" name="{!ld.Id}" change="{!c.onLeadRadio}"/>&nbsp;
+                                 <a href="" data-recId="{!ld.Id + '~' + ld.Name}" onclick="{!c.getDetails}">{!ld.Name}</a></div> 
+                         </td>
+                         <td>   
+                             <div class="slds-truncate" >{!ld.Email}</div> 
+                         </td> 
+                         <td >   
+                             <div class="slds-truncate" >{!ld.Phone}</div> 
+                         </td> 
+                         <td >   
+                             <div class="slds-truncate" >{!ld.MobilePhone}</div> 
+                         </td> 
+                        <td >   
+                            <div class="slds-truncate" >{!ld.Street} <br></br> {!ld.City}  <aura:if isTrue="{!not(empty(ld.State))}"> , {!ld.State}</aura:if></div> 
+                        </td> 
+                     </tr> 
+        			 </aura:iteration>
+                </aura:if>
+                 <tr>
+                     <td colspan="5"> 
+                         <br></br>
+                		 <br></br>
+                     </td>
+                 </tr>
+               
+                <aura:if isTrue="{! not(empty(v.ExstAcct))}" >
+                    <tr class="slds-text-heading_medium"><td colspan="4"><b>
+                        <aura:if isTrue="{!(empty(v.newLead.Email))}">
+                        	{!'Accounts matching lastname ' + v.newLead.LastName}
+                        </aura:if>
+                        <aura:if isTrue="{!not(empty(v.newLead.Email))}">
+                            {!'Accounts matching email address ' + v.newLead.email}
+                        </aura:if>
+                        </b></td></tr>
+                    <br></br>
+        			<aura:iteration items="{!v.ExstAcct}" var="ac">
+            		<tr class="slds-hint-parent"> 
+                         <td>   
+                             <div class="slds-truncate" ><ui:inputRadio aura:id="accradio" name="{!ac.Id}" change="{!c.onAcctRadio}"/>&nbsp;
+                                 <a href="" data-recId="{!ac.Id + '~' + ac.Name}" onclick="{!c.getDetails}">{!ac.Name}</a></div> 
+                         </td>                          
+                         <td>   
+                             <div class="slds-truncate" >{!ac.PersonEmail}</div> 
+                         </td> 
+                         <td>   
+                             <div class="slds-truncate" >{!ac.Phone}</div> 
+                         </td> 
+                         <td>   
+                             <div class="slds-truncate" >{!ac.PersonMobilePhone}</div> 
+                         </td> 
+                         <td>   
+                             <div class="slds-truncate" >{!ac.PersonMailingAddress}</div> 
+                         </td> 
+                     </tr> 
+        			</aura:iteration>
+                </aura:if>
+                 <tr>
+                     <td colspan="5"><div class="slds-align_absolute-center" ><lightning:Button aura:Id="Create" label="Not Me!"  title ="Create Lead" onclick="{!c.decisionPath}" class="slds-m-top_small" variant="brand"/>
+                     <lightning:Button label="Update"  title ="Update Lead" aura:Id="Update"  onclick="{!c.decisionPath}" disabled="true" class="slds-m-top_small" variant="brand"/></div></td>
+                 </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="slds">
+        <div aria-hidden="true" role="dialog" class="slds-modal slds-modal--prompt slds-fade-in-hide" aura:id="modaldialog">
+        	<div class="slds-modal__container">
+            	<div>
+                	<div >
+                    	<p><c:detailRecord></c:detailRecord></p>
+                	</div>
+            	</div>
+        	</div>
+    	</div>
+    	<div class="slds-backdrop slds-backdrop--hide" aura:id="backdrop">
+		</div>
+	</div>
+</aura:component>

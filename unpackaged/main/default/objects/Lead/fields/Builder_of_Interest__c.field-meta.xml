@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+        <fullName>Builder_of_Interest__c</fullName>
+        <externalId>false</externalId>
+        <label>Builder of Interest</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>All Builders</fullName>
+                    <default>false</default>
+                    <label>All Builders</label>
+                </value>
+                <value>
+                    <fullName>AVI Homes</fullName>
+                    <default>false</default>
+                    <label>AVI Homes</label>
+                </value>
+                <value>
+                    <fullName>Brohn Homes</fullName>
+                    <default>false</default>
+                    <label>Brohn Homes</label>
+                </value>
+                <value>
+                    <fullName>Brookfield Residential</fullName>
+                    <default>false</default>
+                    <label>Brookfield Residential</label>
+                </value>
+                <value>
+                    <fullName>Buffington Homes</fullName>
+                    <default>false</default>
+                    <label>Buffington Homes</label>
+                </value>
+                <value>
+                    <fullName>Castle Rock Communities</fullName>
+                    <default>false</default>
+                    <label>Castle Rock Communities</label>
+                </value>
+                <value>
+                    <fullName>David Weekley Homes</fullName>
+                    <default>false</default>
+                    <label>David Weekley Homes</label>
+                </value>
+                <value>
+                    <fullName>Dream Finders Homes</fullName>
+                    <default>false</default>
+                    <label>Dream Finders Homes</label>
+                </value>
+                <value>
+                    <fullName>Experience Park</fullName>
+                    <default>false</default>
+                    <label>Experience Park</label>
+                </value>
+                <value>
+                    <fullName>Highland Homes</fullName>
+                    <default>false</default>
+                    <label>Highland Homes</label>
+                </value>
+                <value>
+                    <fullName>Milestone Community Builders</fullName>
+                    <default>false</default>
+                    <label>Milestone Community Builders</label>
+                </value>
+                <value>
+                    <fullName>MX3 Homes</fullName>
+                    <default>false</default>
+                    <label>MX3 Homes</label>
+                </value>
+                <value>
+                    <fullName>Newleaf Homes</fullName>
+                    <default>false</default>
+                    <label>Newleaf Homes</label>
+                </value>
+                <value>
+                    <fullName>Pacesetter Homes</fullName>
+                    <default>false</default>
+                    <label>Pacesetter Homes</label>
+                </value>
+                <value>
+                    <fullName>Perry Homes</fullName>
+                    <default>false</default>
+                    <label>Perry Homes</label>
+                </value>
+                <value>
+                    <fullName>Taylor Morrison</fullName>
+                    <default>false</default>
+                    <label>Taylor Morrison</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+        <visibleLines>4</visibleLines>
+    </CustomField>

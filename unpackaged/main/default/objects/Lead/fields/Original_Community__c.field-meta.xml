@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+        <fullName>Original_Community__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Original Community that this lead was interested in.</inlineHelpText>
+        <label>Original Community</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Abrantes</fullName>
+                    <default>false</default>
+                    <label>Abrantes</label>
+                </value>
+                <value>
+                    <fullName>Addison</fullName>
+                    <default>false</default>
+                    <label>Addison</label>
+                </value>
+                <value>
+                    <fullName>Avalon</fullName>
+                    <default>false</default>
+                    <label>Avalon</label>
+                </value>
+                <value>
+                    <fullName>Behrens Ranch</fullName>
+                    <default>false</default>
+                    <label>Behrens Ranch</label>
+                </value>
+                <value>
+                    <fullName>Belterra</fullName>
+                    <default>false</default>
+                    <label>Belterra</label>
+                </value>
+                <value>
+                    <fullName>Blanco Vista</fullName>
+                    <default>false</default>
+                    <label>Blanco Vista</label>
+                </value>
+                <value>
+                    <fullName>Brodie Springs</fullName>
+                    <default>false</default>
+                    <label>Brodie Springs</label>
+                </value>
+                <value>
+                    <fullName>BRP General</fullName>
+                    <default>false</default>
+                    <label>BRP General</label>
+                </value>
+                <value>
+                    <fullName>BRP General Close-out</fullName>
+                    <default>false</default>
+                    <label>BRP General Close-out</label>
+                </value>
+                <value>
+                    <fullName>BRP General Cottages</fullName>
+                    <default>false</default>
+                    <label>BRP General Cottages</label>
+                </value>
+                <value>
+                    <fullName>Brushy Creek - The Ranch</fullName>
+                    <default>false</default>
+                    <label>Brushy Creek - The Ranch</label>
+                </value>
+                <value>
+                    <fullName>Bryson</fullName>
+                    <default>false</default>
+                    <label>Bryson</label>
+                </value>
+                <value>
+                    <fullName>Caliterra</fullName>
+                    <default>false</default>
+                    <label>Caliterra</label>
+                </value>
+                <value>
+                    <fullName>Caliterra - Parkside</fullName>
+                    <default>false</default>
+                    <label>Caliterra - Parkside</label>
+                </value>
+                <value>
+                    <fullName>Caprock at Crystal Falls</fullName>
+                    <default>false</default>
+                    <label>Caprock at Crystal Falls</label>
+                </value>
+                <value>
+                    <fullName>Cap Rock Estates</fullName>
+                    <default>false</default>
+                    <label>Cap Rock Estates</label>
+                </value>
+                <value>
+                    <fullName>Cimarron Hills</fullName>
+                    <default>false</default>
+                    <label>Cimarron Hills</label>
+                </value>
+                <value>
+                    <fullName>Cottages at Abrantes</fullName>
+                    <default>false</default>
+                    <label>Cottages at Abrantes</label>
+                </value>
+                <value>
+                    <fullName>Cottages at Crystal Falls</fullName>
+                    <default>false</default>
+                    <label>Cottages at Crystal Falls</label>
+                </value>
+                <value>
+                    <fullName>Cottages at Northwoods</fullName>
+                    <default>false</default>
+                    <label>Cottages at Northwoods</label>
+                </value>
+                <value>
+                    <fullName>Easton Park - Skyline Park</fullName>
+                    <default>false</default>
+                    <label>Easton Park - Skyline Park</label>
+                </value>
+                <value>
+                    <fullName>Easton Park - Union Park</fullName>
+                    <default>false</default>
+                    <label>Easton Park - Union Park</label>
+                </value>
+                <value>
+                    <fullName>Escalera</fullName>
+                    <default>false</default>
+                    <label>Escalera</label>
+                </value>
+                <value>
+                    <fullName>Kissing Tree</fullName>
+                    <default>false</default>
+                    <label>Kissing Tree</label>
+                </value>
+                <value>
+                    <fullName>Mayfield Ranch</fullName>
+                    <default>false</default>
+                    <label>Mayfield Ranch</label>
+                </value>
+                <value>
+                    <fullName>Paloma Lake</fullName>
+                    <default>false</default>
+                    <label>Paloma Lake</label>
+                </value>
+                <value>
+                    <fullName>Pearson Place</fullName>
+                    <default>false</default>
+                    <label>Pearson Place</label>
+                </value>
+                <value>
+                    <fullName>Provence</fullName>
+                    <default>false</default>
+                    <label>Provence</label>
+                </value>
+                <value>
+                    <fullName>Retreat at Dripping Springs</fullName>
+                    <default>false</default>
+                    <label>Retreat at Dripping Springs</label>
+                </value>
+                <value>
+                    <fullName>Rough Hollow</fullName>
+                    <default>false</default>
+                    <label>Rough Hollow</label>
+                </value>
+                <value>
+                    <fullName>Rough Hollow Arroyo Divide</fullName>
+                    <default>false</default>
+                    <label>Rough Hollow Arroyo Divide</label>
+                </value>
+                <value>
+                    <fullName>Rough Hollow - Canyon Pass</fullName>
+                    <default>false</default>
+                    <label>Rough Hollow - Canyon Pass</label>
+                </value>
+                <value>
+                    <fullName>Rough Hollow - Highland Terrace</fullName>
+                    <default>false</default>
+                    <label>Rough Hollow - Highland Terrace</label>
+                </value>
+                <value>
+                    <fullName>Rough Hollow - The Summit</fullName>
+                    <default>false</default>
+                    <label>Rough Hollow - The Summit</label>
+                </value>
+                <value>
+                    <fullName>Rough Hollow - West Rim</fullName>
+                    <default>false</default>
+                    <label>Rough Hollow - West Rim</label>
+                </value>
+                <value>
+                    <fullName>Rough Hollow - Woodlands</fullName>
+                    <default>false</default>
+                    <label>Rough Hollow - Woodlands</label>
+                </value>
+                <value>
+                    <fullName>Santa Rita Ranch</fullName>
+                    <default>false</default>
+                    <label>Santa Rita Ranch</label>
+                </value>
+                <value>
+                    <fullName>Sarita Valley</fullName>
+                    <default>false</default>
+                    <label>Sarita Valley</label>
+                </value>
+                <value>
+                    <fullName>Silver Oak</fullName>
+                    <default>false</default>
+                    <label>Silver Oak</label>
+                </value>
+                <value>
+                    <fullName>Terra Colinas</fullName>
+                    <default>false</default>
+                    <label>Terra Colinas</label>
+                </value>
+                <value>
+                    <fullName>Training Division</fullName>
+                    <default>false</default>
+                    <label>Training Division</label>
+                </value>
+                <value>
+                    <fullName>Travisso</fullName>
+                    <default>false</default>
+                    <label>Travisso</label>
+                </value>
+                <value>
+                    <fullName>Water Oak</fullName>
+                    <default>false</default>
+                    <label>Water Oak</label>
+                </value>
+                <value>
+                    <fullName>Wild Rock</fullName>
+                    <default>false</default>
+                    <label>Wild Rock</label>
+                </value>
+                <value>
+                    <fullName>Easton Park</fullName>
+                    <default>false</default>
+                    <label>Easton Park</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </CustomField>

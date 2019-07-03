@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+        <fullName>Status__c</fullName>
+        <externalId>false</externalId>
+        <label>Status</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>No Response</fullName>
+                    <default>false</default>
+                    <label>No Response</label>
+                </value>
+                <value>
+                    <fullName>Responded</fullName>
+                    <default>false</default>
+                    <label>Responded</label>
+                </value>
+                <value>
+                    <fullName>Responded Nurture</fullName>
+                    <default>false</default>
+                    <label>Responded Nurture</label>
+                </value>
+                <value>
+                    <fullName>Unattended Tour</fullName>
+                    <default>false</default>
+                    <label>Unattended Tour</label>
+                </value>
+                <value>
+                    <fullName>Confirmed Appointment</fullName>
+                    <default>false</default>
+                    <label>Confirmed Appointment</label>
+                </value>
+                <value>
+                    <fullName>Missed Appointment</fullName>
+                    <default>false</default>
+                    <label>Missed Appointment</label>
+                </value>
+                <value>
+                    <fullName>Site Visited</fullName>
+                    <default>false</default>
+                    <label>Site Visited</label>
+                </value>
+                <value>
+                    <fullName>Contingent</fullName>
+                    <default>false</default>
+                    <label>Contingent</label>
+                </value>
+                <value>
+                    <fullName>Purchased</fullName>
+                    <default>false</default>
+                    <label>Purchased</label>
+                </value>
+                <value>
+                    <fullName>Prequalified</fullName>
+                    <default>false</default>
+                    <label>Prequalified</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </CustomField>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+        <fullName>Household_Income__c</fullName>
+        <externalId>false</externalId>
+        <label>Household Income</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Up to $39,000</fullName>
+                    <default>false</default>
+                    <label>Up to $39,000</label>
+                </value>
+                <value>
+                    <fullName>$40,000 - $99,000</fullName>
+                    <default>false</default>
+                    <label>$40,000 - $99,000</label>
+                </value>
+                <value>
+                    <fullName>$100,000 - $149,000</fullName>
+                    <default>false</default>
+                    <label>$100,000 - $149,000</label>
+                </value>
+                <value>
+                    <fullName>$150,000 - $199,000</fullName>
+                    <default>false</default>
+                    <label>$150,000 - $199,000</label>
+                </value>
+                <value>
+                    <fullName>$200,000 - $299,000</fullName>
+                    <default>false</default>
+                    <label>$200,000 - $299,000</label>
+                </value>
+                <value>
+                    <fullName>$300,000 - $399,000</fullName>
+                    <default>false</default>
+                    <label>$300,000 - $399,000</label>
+                </value>
+                <value>
+                    <fullName>$400,000+</fullName>
+                    <default>false</default>
+                    <label>$400,000+</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </CustomField>

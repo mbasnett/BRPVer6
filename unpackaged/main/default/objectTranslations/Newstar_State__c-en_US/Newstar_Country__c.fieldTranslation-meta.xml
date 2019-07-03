@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- NEWSTAR Country --></label>
+        <name>Newstar_Country__c</name>
+        <relationshipLabel><!-- States --></relationshipLabel>
+    </CustomFieldTranslation>
