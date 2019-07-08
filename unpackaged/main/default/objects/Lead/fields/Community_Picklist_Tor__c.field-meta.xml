@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+        <fullName>Community_Picklist_Tor__c</fullName>
+        <externalId>false</externalId>
+        <label>Community Picklist Tor</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Community_Picklist_Tor</valueSetName>
+        </valueSet>
+    </CustomField>

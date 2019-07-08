@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Interest Status --></label>
+        <name>Interest_Status__c</name>
+        <picklistValues>
+            <masterLabel>Confirmed Appointment</masterLabel>
+            <translation><!-- Confirmed Appointment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Contingent</masterLabel>
+            <translation><!-- Contingent --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Missed Appointment</masterLabel>
+            <translation><!-- Missed Appointment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No Response</masterLabel>
+            <translation><!-- No Response --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Prequalified</masterLabel>
+            <translation><!-- Prequalified --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Purchased</masterLabel>
+            <translation><!-- Purchased --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Responded</masterLabel>
+            <translation><!-- Responded --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Responded Nurture</masterLabel>
+            <translation><!-- Responded Nurture --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Site Visited</masterLabel>
+            <translation><!-- Site Visited --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unattended Tour</masterLabel>
+            <translation><!-- Unattended Tour --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

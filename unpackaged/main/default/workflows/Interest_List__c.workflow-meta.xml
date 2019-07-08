@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?><Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <rules>
+        <fullName>WAS Walk-in Traffic</fullName>
+        <actions>
+            <name>WAS_4_HR_After_Visit_Thank_you_for_visiting_Follow_up_Email</name>
+            <type>Task</type>
+        </actions>
+        <active>true</active>
+        <formula>Text( Interest_Status__c ) = "Responded Nurture" &amp;&amp; CONTAINS(Text( Lead_source__c), "Walk-in") &amp;&amp;  Sales_Office__c = "a0H3F0000034GCG"</formula>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+        <workflowTimeTriggers>
+            <actions>
+                <name>WAS_Day_1_Thank_you_for_visiting_Follow_up_Call</name>
+                <type>Task</type>
+            </actions>
+            <timeLength>1</timeLength>
+            <workflowTimeTriggerUnit>Days</workflowTimeTriggerUnit>
+        </workflowTimeTriggers>
+        <workflowTimeTriggers>
+            <actions>
+                <name>WAS_Day_7_Follow_up_Call</name>
+                <type>Task</type>
+            </actions>
+            <timeLength>7</timeLength>
+            <workflowTimeTriggerUnit>Days</workflowTimeTriggerUnit>
+        </workflowTimeTriggers>
+        <workflowTimeTriggers>
+            <actions>
+                <name>WAS_Day_28_Follow_up_Call</name>
+                <type>Task</type>
+            </actions>
+            <timeLength>28</timeLength>
+            <workflowTimeTriggerUnit>Days</workflowTimeTriggerUnit>
+        </workflowTimeTriggers>
+        <workflowTimeTriggers>
+            <actions>
+                <name>WAS_Day_125_Are_you_still_interested_Call</name>
+                <type>Task</type>
+            </actions>
+            <timeLength>125</timeLength>
+            <workflowTimeTriggerUnit>Days</workflowTimeTriggerUnit>
+        </workflowTimeTriggers>
+        <workflowTimeTriggers>
+            <actions>
+                <name>WAS_Day_245_Are_you_still_interested_Call</name>
+                <type>Task</type>
+            </actions>
+            <timeLength>245</timeLength>
+            <workflowTimeTriggerUnit>Days</workflowTimeTriggerUnit>
+        </workflowTimeTriggers>
+        <workflowTimeTriggers>
+            <actions>
+                <name>WAS_Day_365_Are_you_still_interested_Call</name>
+                <type>Task</type>
+            </actions>
+            <timeLength>365</timeLength>
+            <workflowTimeTriggerUnit>Days</workflowTimeTriggerUnit>
+        </workflowTimeTriggers>
+        <workflowTimeTriggers>
+            <actions>
+                <name>WAS_Day_485_Are_you_still_interested_Call</name>
+                <type>Task</type>
+            </actions>
+            <timeLength>485</timeLength>
+            <workflowTimeTriggerUnit>Days</workflowTimeTriggerUnit>
+        </workflowTimeTriggers>
+        <workflowTimeTriggers>
+            <actions>
+                <name>WAS_Day_21_Follow_up_Call</name>
+                <type>Task</type>
+            </actions>
+            <timeLength>21</timeLength>
+            <workflowTimeTriggerUnit>Days</workflowTimeTriggerUnit>
+        </workflowTimeTriggers>
+        <workflowTimeTriggers>
+            <actions>
+                <name>WAS_Day_65_Are_you_still_interested_Call</name>
+                <type>Task</type>
+            </actions>
+            <timeLength>65</timeLength>
+            <workflowTimeTriggerUnit>Days</workflowTimeTriggerUnit>
+        </workflowTimeTriggers>
+        <workflowTimeTriggers>
+            <actions>
+                <name>WAS_Day_14_Follow_up_Call</name>
+                <type>Task</type>
+            </actions>
+            <timeLength>14</timeLength>
+            <workflowTimeTriggerUnit>Days</workflowTimeTriggerUnit>
+        </workflowTimeTriggers>
+    </rules>
+    <rules>
+        <fullName>WAS_Web_Traffic</fullName>
+        <actions>
+            <name>WAS_Day_1_Introduction_Email</name>
+            <type>Task</type>
+        </actions>
+        <active>true</active>
+        <formula>CONTAINS(Text( Lead_source__c), "Web") &amp;&amp; Sales_Office__c = "a0H3F0000034GCG"</formula>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+        <workflowTimeTriggers>
+            <timeLength>1</timeLength>
+            <workflowTimeTriggerUnit>Days</workflowTimeTriggerUnit>
+        </workflowTimeTriggers>
+        <workflowTimeTriggers>
+            <actions>
+                <name>WAS_Day_20_Check_In_How_can_I_help_you_Email</name>
+                <type>Task</type>
+            </actions>
+            <timeLength>20</timeLength>
+            <workflowTimeTriggerUnit>Days</workflowTimeTriggerUnit>
+        </workflowTimeTriggers>
+        <workflowTimeTriggers>
+            <actions>
+                <name>WAS_Day_98_Check_In_How_can_I_help_you_Email</name>
+                <type>Task</type>
+            </actions>
+            <timeLength>98</timeLength>
+            <workflowTimeTriggerUnit>Days</workflowTimeTriggerUnit>
+        </workflowTimeTriggers>
+    </rules>
+    <tasks>
+        <fullName>WAS_4_HR_After_Visit_Thank_you_for_visiting_Follow_up_Email</fullName>
+        <assignedToType>owner</assignedToType>
+        <description>Send personalized email to customer answering outstanding questions/request second appointment.</description>
+        <dueDateOffset>0</dueDateOffset>
+        <notifyAssignee>false</notifyAssignee>
+        <priority>Normal</priority>
+        <protected>false</protected>
+        <status>Open</status>
+        <subject>WAS - 4 HR After Visit - Thank you for visiting/Follow up Email</subject>
+    </tasks>
+    <tasks>
+        <fullName>WAS_Day_125_Are_you_still_interested_Call</fullName>
+        <assignedToType>owner</assignedToType>
+        <description>Personal call to follow-up to see if they are still interested. Encourage unsubscribes or set to inactive status if prospect has purchased elsewhere to keep database fresh.</description>
+        <dueDateOffset>0</dueDateOffset>
+        <notifyAssignee>false</notifyAssignee>
+        <priority>Normal</priority>
+        <protected>false</protected>
+        <status>Open</status>
+        <subject>WAS - Day 125 - Are you still interested? Call</subject>
+    </tasks>
+    <tasks>
+        <fullName>WAS_Day_14_Follow_up_Call</fullName>
+        <assignedToType>owner</assignedToType>
+        <description>Personalized call to customer answering outstanding questions/request follow-up appointment/share new information.</description>
+        <dueDateOffset>0</dueDateOffset>
+        <notifyAssignee>false</notifyAssignee>
+        <priority>Normal</priority>
+        <protected>false</protected>
+        <status>Open</status>
+        <subject>WAS - Day 14 - Follow-up Call</subject>
+    </tasks>
+    <tasks>
+        <fullName>WAS_Day_1_Introduction_Email</fullName>
+        <assignedToType>owner</assignedToType>
+        <description>Introduction (For all web-based leads w/Community of Interest Specified) 
+or 
+Introduction (For all web-based leads w/NO Community of Interest Specified) 
+
+Template can be personalized.</description>
+        <dueDateOffset>0</dueDateOffset>
+        <notifyAssignee>false</notifyAssignee>
+        <priority>Normal</priority>
+        <protected>false</protected>
+        <status>Open</status>
+        <subject>WAS - Day 1 - Introduction Email</subject>
+    </tasks>
+    <tasks>
+        <fullName>WAS_Day_1_Thank_you_for_visiting_Follow_up_Call</fullName>
+        <assignedToType>owner</assignedToType>
+        <description>Personalized call to customer answering outstanding questions/request second appointment.</description>
+        <dueDateOffset>0</dueDateOffset>
+        <notifyAssignee>false</notifyAssignee>
+        <priority>Normal</priority>
+        <protected>false</protected>
+        <status>Open</status>
+        <subject>WAS - Day 1 - Thank you for visiting/Follow-up Call</subject>
+    </tasks>
+    <tasks>
+        <fullName>WAS_Day_20_Check_In_How_can_I_help_you_Email</fullName>
+        <assignedToType>owner</assignedToType>
+        <description>Check-In/How can I help you 
+
+Template can be personalized.</description>
+        <dueDateOffset>0</dueDateOffset>
+        <notifyAssignee>false</notifyAssignee>
+        <priority>Normal</priority>
+        <protected>false</protected>
+        <status>Open</status>
+        <subject>WAS - Day 20 - Check-In/How can I help you Email</subject>
+    </tasks>
+    <tasks>
+        <fullName>WAS_Day_21_Follow_up_Call</fullName>
+        <assignedToType>owner</assignedToType>
+        <description>Personalized call to customer answering outstanding questions/request follow-up appointment/share new information.</description>
+        <dueDateOffset>0</dueDateOffset>
+        <notifyAssignee>false</notifyAssignee>
+        <priority>Normal</priority>
+        <protected>false</protected>
+        <status>Open</status>
+        <subject>WAS - Day 21 - Follow-up Call</subject>
+    </tasks>
+    <tasks>
+        <fullName>WAS_Day_245_Are_you_still_interested_Call</fullName>
+        <assignedToType>owner</assignedToType>
+        <description>Personal call to follow-up to see if they are still interested. Encourage unsubscribes or set to inactive status if prospect has purchased elsewhere to keep database fresh.</description>
+        <dueDateOffset>0</dueDateOffset>
+        <notifyAssignee>false</notifyAssignee>
+        <priority>Normal</priority>
+        <protected>false</protected>
+        <status>Open</status>
+        <subject>WAS - Day 245 - Are you still interested? Call</subject>
+    </tasks>
+    <tasks>
+        <fullName>WAS_Day_28_Follow_up_Call</fullName>
+        <assignedToType>owner</assignedToType>
+        <description>Personalized call to customer answering outstanding questions/request follow-up appointment/share new information.</description>
+        <dueDateOffset>0</dueDateOffset>
+        <notifyAssignee>false</notifyAssignee>
+        <priority>Normal</priority>
+        <protected>false</protected>
+        <status>Open</status>
+        <subject>WAS - Day 28 - Follow-up Call</subject>
+    </tasks>
+    <tasks>
+        <fullName>WAS_Day_365_Are_you_still_interested_Call</fullName>
+        <assignedToType>owner</assignedToType>
+        <description>Personal call to follow-up to see if they are still interested. Encourage unsubscribes or set to inactive status if prospect has purchased elsewhere to keep database fresh.</description>
+        <dueDateOffset>0</dueDateOffset>
+        <notifyAssignee>false</notifyAssignee>
+        <priority>Normal</priority>
+        <protected>false</protected>
+        <status>Open</status>
+        <subject>WAS - Day 365 - Are you still interested? Call</subject>
+    </tasks>
+    <tasks>
+        <fullName>WAS_Day_485_Are_you_still_interested_Call</fullName>
+        <assignedToType>owner</assignedToType>
+        <description>Personal call to follow-up to see if they are still interested. Encourage unsubscribes or set to inactive status if prospect has purchased elsewhere to keep database fresh.</description>
+        <dueDateOffset>0</dueDateOffset>
+        <notifyAssignee>false</notifyAssignee>
+        <priority>Normal</priority>
+        <protected>false</protected>
+        <status>Open</status>
+        <subject>WAS - Day 485 - Are you still interested? Call</subject>
+    </tasks>
+    <tasks>
+        <fullName>WAS_Day_65_Are_you_still_interested_Call</fullName>
+        <assignedToType>owner</assignedToType>
+        <description>Personal call to follow-up to see if they are still interested. Encourage unsubscribes or set to inactive status if prospect has purchased elsewhere to keep database fresh.</description>
+        <dueDateOffset>0</dueDateOffset>
+        <notifyAssignee>false</notifyAssignee>
+        <priority>Normal</priority>
+        <protected>false</protected>
+        <status>Open</status>
+        <subject>WAS - Day 65 - Are you still interested? Call</subject>
+    </tasks>
+    <tasks>
+        <fullName>WAS_Day_7_Follow_up_Call</fullName>
+        <assignedToType>owner</assignedToType>
+        <description>Personalized call to customer answering outstanding questions/request follow-up appointment/share new information.</description>
+        <dueDateOffset>0</dueDateOffset>
+        <notifyAssignee>false</notifyAssignee>
+        <priority>Normal</priority>
+        <protected>false</protected>
+        <status>Open</status>
+        <subject>WAS - Day 7 - Follow-up Call</subject>
+    </tasks>
+    <tasks>
+        <fullName>WAS_Day_98_Check_In_How_can_I_help_you_Email</fullName>
+        <assignedToType>owner</assignedToType>
+        <description>Check-In/How can I help you 
+
+Template can be personalized.</description>
+        <dueDateOffset>0</dueDateOffset>
+        <notifyAssignee>false</notifyAssignee>
+        <priority>Normal</priority>
+        <protected>false</protected>
+        <status>Open</status>
+        <subject>WAS - Day 98 - Check-In/How can I help you Email</subject>
+    </tasks>
+</Workflow>

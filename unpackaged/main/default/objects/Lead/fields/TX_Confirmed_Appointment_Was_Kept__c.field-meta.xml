@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+        <fullName>TX_Confirmed_Appointment_Was_Kept__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Hidden field used to confirm if an appointment was met or not via workflow rules.</description>
+        <externalId>false</externalId>
+        <label>[TX] Confirmed Appointment Was Kept</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </CustomField>

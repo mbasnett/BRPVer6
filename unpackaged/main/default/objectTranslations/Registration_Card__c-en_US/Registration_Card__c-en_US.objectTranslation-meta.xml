@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    
+    
+    
+    
+    
+    <caseValues>
+        <plural>false</plural>
+        <value>Registration Card</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Registration Cards</value>
+    </caseValues>
+    <startsWith>Consonant</startsWith>
+    <layouts>
+        <layout>Denver Registration Card Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Registration Card --></label>
+            <section>Registration Card</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Registration Card Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Toronto Registration Card Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Registration Card --></label>
+            <section>Registration Card</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <label><!-- Denver Registration Card --></label>
+        <name>Denver_Registration_Card</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Toronto Registration Card --></label>
+        <name>Toronto_Registration_Card</name>
+    </recordTypes>
+</CustomObjectTranslation>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Assigned Queue --></label>
+        <name>Assigned_Queue__c</name>
+        <picklistValues>
+            <masterLabel>DC_Admirals_Square</masterLabel>
+            <translation><!-- DC_Admirals_Square --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DC_Avendale</masterLabel>
+            <translation><!-- DC_Avendale --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DC_Bluffs_at_Sleeter_Lake</masterLabel>
+            <translation><!-- DC_Bluffs_at_Sleeter_Lake --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DC_Bradford_s_Landing</masterLabel>
+            <translation><!-- DC_Bradford_s_Landing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DC_Easton_Village</masterLabel>
+            <translation><!-- DC_Easton_Village --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DC_Heritage_Shores</masterLabel>
+            <translation><!-- DC_Heritage_Shores --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DC_Liberty</masterLabel>
+            <translation><!-- DC_Liberty --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DC_Mayfair</masterLabel>
+            <translation><!-- DC_Mayfair --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DC_Oakview_Village</masterLabel>
+            <translation><!-- DC_Oakview_Village --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DC_Potomac_Shores</masterLabel>
+            <translation><!-- DC_Potomac_Shores --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DC_Ridgeview</masterLabel>
+            <translation><!-- DC_Ridgeview --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DC_Snowden_Bridge_Single_Family</masterLabel>
+            <translation><!-- DC_Snowden_Bridge_Single_Family --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DC_Snowden_Bridge_Townhomes</masterLabel>
+            <translation><!-- DC_Snowden_Bridge_Townhomes --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DC_Travilah_Station</masterLabel>
+            <translation><!-- DC_Travilah_Station --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DC_Waterford_Manor</masterLabel>
+            <translation><!-- DC_Waterford_Manor --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Toronto_Pathways</masterLabel>
+            <translation><!-- Toronto_Pathways --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Toronto_Pinehurst</masterLabel>
+            <translation><!-- Toronto_Pinehurst --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Toronto_Woodhaven</masterLabel>
+            <translation><!-- Toronto_Woodhaven --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

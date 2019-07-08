@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+        <fullName>DC_Potomac_Shores_Cobuyer</fullName>
+        <filterScope>Queue</filterScope>
+        <label>DC Potomac Shores</label>
+        <queue>DC_Potomac_Shores</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </ListView>

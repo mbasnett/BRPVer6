@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Home many bedrooms do you need? --></label>
+        <name>Home_many_bedrooms_do_you_need__c</name>
+        <picklistValues>
+            <masterLabel>Four or more</masterLabel>
+            <translation><!-- Four or more --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Three</masterLabel>
+            <translation><!-- Three --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Two</masterLabel>
+            <translation><!-- Two --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+        <fullName>TX_Legacy_Lead__c</fullName>
+        <externalId>false</externalId>
+        <formula>if ( isblank(TX_Legacy_Lead_ID__c ), false, true)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Is this a lead imported from the previous Salesforce system for Texas?</inlineHelpText>
+        <label>TX Legacy Lead (*see notes below)</label>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </CustomField>

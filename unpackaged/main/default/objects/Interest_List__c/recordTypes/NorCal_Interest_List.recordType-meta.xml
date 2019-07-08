@@ -1,0 +1,381 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+        <fullName>NorCal_Interest_List</fullName>
+        <active>true</active>
+        <label>NorCal Interest List</label>
+        <picklistValues>
+            <picklist>Interest_Status__c</picklist>
+            <values>
+                <fullName>Confirmed Appointment</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Contingent</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Missed Appointment</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>No Response</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Prequalified</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Purchased</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Responded</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Responded Nurture</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Site Visited</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Unattended Tour</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Lead_source__c</picklist>
+            <values>
+                <fullName>Advertisement</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Austin Relocation Guide</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>BDX</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Billboard</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Brookfield Website</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Builder Boost</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Customer Event</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Direct Mail</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Driving By</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Employee Referral</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Facebook</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Facebook Lead Ad</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Hot On Homes</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Interactive Sales Tool</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Internal</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Internet</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Landing Page</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Lightbox</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Live Chat</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Master Plan%2FCommunity</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Newspaper%2FMagazine</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Online</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PCR</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Paid Search</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Partner</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Phone Inquiry</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Radio</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Real Estate Agent</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Realtor</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Referral</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Signage</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Social Media</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Supra</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Television</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Top Retirements</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>TourFactory</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Trade Show</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Vendor</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Walk-in</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Walk-in Event</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Walk-in with Realtor</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Website</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Where To Retire</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Loss_Reason__c</picklist>
+            <values>
+                <fullName>%2ECost Objections</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>%2EJust Looking</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>%2ENo Response</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>%2ENot Interested</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>%2EOther Builder</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>%2EOut of Market</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>%2ETimeline</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Appraisal Issue</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Change in Employment %2F Relocation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Change in Marital Status</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Changed Mind</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Concerns with Disclosure</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Contingency Expiration</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Correction</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Customer Satisfaction</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Discontinued Product</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Homesite Conditions</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Loan Denial</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Lot Transfer %2F Lot Assignment</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Material Out of Stock</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Medical Reasons</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Nonperformance</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Offer Not Accepted</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Purchased with Competitor</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Right of Rescission</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Unsatisfied with Product</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Rank__c</picklist>
+            <values>
+                <fullName>A - Ready%2C Willing%2C Able</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>B - Two of These</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>C - Ready or Willing or Able</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>D - Cold</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>M - Marketing Only</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>W - Web Lead</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Stage__c</picklist>
+            <values>
+                <fullName>Lead Lost</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>New</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Qualified</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Working</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </RecordType>

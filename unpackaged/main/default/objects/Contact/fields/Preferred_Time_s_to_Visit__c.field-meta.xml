@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+        <fullName>Preferred_Time_s_to_Visit__c</fullName>
+        <externalId>false</externalId>
+        <label>Preferred Time(s) to Visit</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Preferred_Time_s_to_Visit</valueSetName>
+        </valueSet>
+        <visibleLines>4</visibleLines>
+    </CustomField>

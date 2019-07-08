@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+        <fullName>Total_Price__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF( (TEXT(Type__c) =='Spec' || TEXT(Type__c) =='Model'), Assigned_Model__r.Price__c + Price__c + Premium__c + Preconfigured_Options_Amount__c, NULL)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Total Price</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </CustomField>

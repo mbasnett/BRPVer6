@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+        <fullName>Prevent_changes_when_reserved</fullName>
+        <active>true</active>
+        <errorConditionFormula>(
+ISCHANGED(Model__c) 
+|| ISCHANGED(Lot__c) 
+|| ISCHANGED(Sales_Office__c) 
+|| ISCHANGED(Subdivision__c)
+|| ISCHANGED(Sales_Agent_Sales_Office_Relationship__c)
+|| ISCHANGED(Real_Estate_Agent__c)
+) 
+
+&amp;&amp; 
+
+(
+TEXT(StageName)='Lot Reservation' 
+|| TEXT(StageName)='Pre-Contract'
+|| TEXT(StageName)='Pending Offer' 
+|| TEXT(StageName)='Under Contract' 
+|| TEXT(StageName)='Closed'
+)</errorConditionFormula>
+        <errorMessage>Model, lot, subdivision, sales office, sales agent and real estate agent cannot be changed when the lot is reserved or under contract.</errorMessage>
+    </ValidationRule>

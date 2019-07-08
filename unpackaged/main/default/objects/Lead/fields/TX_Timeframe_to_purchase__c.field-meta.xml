@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+        <fullName>TX_Timeframe_to_purchase__c</fullName>
+        <externalId>false</externalId>
+        <label>Timeframe to purchase</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>30 Day</fullName>
+                    <default>false</default>
+                    <label>30 Day</label>
+                </value>
+                <value>
+                    <fullName>1-3 Month</fullName>
+                    <default>false</default>
+                    <label>1-3 Month</label>
+                </value>
+                <value>
+                    <fullName>3-6 Month</fullName>
+                    <default>false</default>
+                    <label>3-6 Month</label>
+                </value>
+                <value>
+                    <fullName>0-6 Months</fullName>
+                    <default>false</default>
+                    <label>0-6 Months</label>
+                </value>
+                <value>
+                    <fullName>6-12 Months</fullName>
+                    <default>false</default>
+                    <label>6-12 Months</label>
+                </value>
+                <value>
+                    <fullName>1 Year</fullName>
+                    <default>false</default>
+                    <label>1 Year</label>
+                </value>
+                <value>
+                    <fullName>1-2 Years</fullName>
+                    <default>false</default>
+                    <label>1-2 Years</label>
+                </value>
+                <value>
+                    <fullName>2+ Years</fullName>
+                    <default>false</default>
+                    <label>2+ Years</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </CustomField>

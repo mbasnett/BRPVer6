@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <caseValues>
+        <plural>false</plural>
+        <value>Interest List</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Interest List</value>
+    </caseValues>
+    <startsWith>Consonant</startsWith>
+    <layouts>
+        <layout>Interest List Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <quickActions>
+        <label><!-- Add a Note --></label>
+        <name>AddNote</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- New Cobuyer --></label>
+        <name>Add_Cobuyer</name>
+    </quickActions>
+    <recordTypes>
+        <label><!-- Alberta Interest List --></label>
+        <name>Alberta_Interest_List</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Denver Interest List --></label>
+        <name>Denver_Interest_List</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- NorCal Interest List --></label>
+        <name>NorCal_Interest_List</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- SoCal Interest List --></label>
+        <name>SoCal_Interest_List</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Texas Interest List --></label>
+        <name>Texas_Interest_List</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Toronto Interest List --></label>
+        <name>Toronto_Interest_List</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Washington Interest List --></label>
+        <name>Washington_Interest_List</name>
+    </recordTypes>
+    <workflowTasks>
+        <description><!-- Send personalized email to customer answering outstanding questions/request second appointment. --></description>
+        <name>WAS_4_HR_After_Visit_Thank_you_for_visiting_Follow_up_Email</name>
+        <subject><!-- WAS - 4 HR After Visit - Thank you for visiting/Follow up Email --></subject>
+    </workflowTasks>
+    <workflowTasks>
+        <description><!-- Personal call to follow-up to see if they are still interested. Encourage unsubscribes or set to inactive status if prospect has purchased elsewhere to keep database fresh. --></description>
+        <name>WAS_Day_125_Are_you_still_interested_Call</name>
+        <subject><!-- WAS - Day 125 - Are you still interested? Call --></subject>
+    </workflowTasks>
+    <workflowTasks>
+        <description><!-- Personalized call to customer answering outstanding questions/request follow-up appointment/share new information. --></description>
+        <name>WAS_Day_14_Follow_up_Call</name>
+        <subject><!-- WAS - Day 14 - Follow-up Call --></subject>
+    </workflowTasks>
+    <workflowTasks>
+        <description><!-- Introduction (For all web-based leads w/Community of Interest Specified) 
+or 
+Introduction (For all web-based leads w/NO Community of Interest Specified) 
+
+Template can be personalized. --></description>
+        <name>WAS_Day_1_Introduction_Email</name>
+        <subject><!-- WAS - Day 1 - Introduction Email --></subject>
+    </workflowTasks>
+    <workflowTasks>
+        <description><!-- Personalized call to customer answering outstanding questions/request second appointment. --></description>
+        <name>WAS_Day_1_Thank_you_for_visiting_Follow_up_Call</name>
+        <subject><!-- WAS - Day 1 - Thank you for visiting/Follow-up Call --></subject>
+    </workflowTasks>
+    <workflowTasks>
+        <description><!-- Check-In/How can I help you 
+
+Template can be personalized. --></description>
+        <name>WAS_Day_20_Check_In_How_can_I_help_you_Email</name>
+        <subject><!-- WAS - Day 20 - Check-In/How can I help you Email --></subject>
+    </workflowTasks>
+    <workflowTasks>
+        <description><!-- Personalized call to customer answering outstanding questions/request follow-up appointment/share new information. --></description>
+        <name>WAS_Day_21_Follow_up_Call</name>
+        <subject><!-- WAS - Day 21 - Follow-up Call --></subject>
+    </workflowTasks>
+    <workflowTasks>
+        <description><!-- Personal call to follow-up to see if they are still interested. Encourage unsubscribes or set to inactive status if prospect has purchased elsewhere to keep database fresh. --></description>
+        <name>WAS_Day_245_Are_you_still_interested_Call</name>
+        <subject><!-- WAS - Day 245 - Are you still interested? Call --></subject>
+    </workflowTasks>
+    <workflowTasks>
+        <description><!-- Personalized call to customer answering outstanding questions/request follow-up appointment/share new information. --></description>
+        <name>WAS_Day_28_Follow_up_Call</name>
+        <subject><!-- WAS - Day 28 - Follow-up Call --></subject>
+    </workflowTasks>
+    <workflowTasks>
+        <description><!-- Personal call to follow-up to see if they are still interested. Encourage unsubscribes or set to inactive status if prospect has purchased elsewhere to keep database fresh. --></description>
+        <name>WAS_Day_365_Are_you_still_interested_Call</name>
+        <subject><!-- WAS - Day 365 - Are you still interested? Call --></subject>
+    </workflowTasks>
+    <workflowTasks>
+        <description><!-- Personal call to follow-up to see if they are still interested. Encourage unsubscribes or set to inactive status if prospect has purchased elsewhere to keep database fresh. --></description>
+        <name>WAS_Day_485_Are_you_still_interested_Call</name>
+        <subject><!-- WAS - Day 485 - Are you still interested? Call --></subject>
+    </workflowTasks>
+    <workflowTasks>
+        <description><!-- Personal call to follow-up to see if they are still interested. Encourage unsubscribes or set to inactive status if prospect has purchased elsewhere to keep database fresh. --></description>
+        <name>WAS_Day_65_Are_you_still_interested_Call</name>
+        <subject><!-- WAS - Day 65 - Are you still interested? Call --></subject>
+    </workflowTasks>
+    <workflowTasks>
+        <description><!-- Personalized call to customer answering outstanding questions/request follow-up appointment/share new information. --></description>
+        <name>WAS_Day_7_Follow_up_Call</name>
+        <subject><!-- WAS - Day 7 - Follow-up Call --></subject>
+    </workflowTasks>
+    <workflowTasks>
+        <description><!-- Check-In/How can I help you 
+
+Template can be personalized. --></description>
+        <name>WAS_Day_98_Check_In_How_can_I_help_you_Email</name>
+        <subject><!-- WAS - Day 98 - Check-In/How can I help you Email --></subject>
+    </workflowTasks>
+</CustomObjectTranslation>

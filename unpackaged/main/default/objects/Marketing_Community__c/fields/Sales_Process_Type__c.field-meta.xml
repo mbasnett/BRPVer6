@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+        <fullName>Sales_Process_Type__c</fullName>
+        <defaultValue>'Direct offer'</defaultValue>
+        <externalId>false</externalId>
+        <label>Default Sales Process Type</label>
+        <required>true</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Direct offer</fullName>
+                    <default>false</default>
+                    <label>Direct offer</label>
+                </value>
+                <value>
+                    <fullName>Lot reservation</fullName>
+                    <default>false</default>
+                    <label>Lot reservation</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </CustomField>

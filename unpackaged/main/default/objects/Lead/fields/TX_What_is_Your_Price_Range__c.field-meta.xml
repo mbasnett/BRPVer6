@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+        <fullName>TX_What_is_Your_Price_Range__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Legacy TX Lead field for Marketing purposes</inlineHelpText>
+        <label>What is Your Price Range? (TX)</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>$100,000 - $149,999</fullName>
+                    <default>false</default>
+                    <label>$100,000 - $149,999</label>
+                </value>
+                <value>
+                    <fullName>$150,000 - $199,999</fullName>
+                    <default>false</default>
+                    <label>$150,000 - $199,999</label>
+                </value>
+                <value>
+                    <fullName>Under $200,000</fullName>
+                    <default>false</default>
+                    <label>Under $200,000</label>
+                </value>
+                <value>
+                    <fullName>$200,000 - $249,000</fullName>
+                    <default>false</default>
+                    <label>$200,000 - $249,000</label>
+                </value>
+                <value>
+                    <fullName>$250,000 - $299,999</fullName>
+                    <default>false</default>
+                    <label>$250,000 - $299,999</label>
+                </value>
+                <value>
+                    <fullName>$300,000 - $349,999</fullName>
+                    <default>false</default>
+                    <label>$300,000 - $349,999</label>
+                </value>
+                <value>
+                    <fullName>$350,000 - $399,999</fullName>
+                    <default>false</default>
+                    <label>$350,000 - $399,999</label>
+                </value>
+                <value>
+                    <fullName>$400,000 - $500,000</fullName>
+                    <default>false</default>
+                    <label>$400,000 - $500,000</label>
+                </value>
+                <value>
+                    <fullName>Over $500,000</fullName>
+                    <default>false</default>
+                    <label>Over $500,000</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+        <visibleLines>4</visibleLines>
+    </CustomField>

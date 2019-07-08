@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+        <fullName>How_Was_Consent_Received__c</fullName>
+        <externalId>false</externalId>
+        <label>How Was Consent Received</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>How_Was_Consent_Received</valueSetName>
+        </valueSet>
+    </CustomField>

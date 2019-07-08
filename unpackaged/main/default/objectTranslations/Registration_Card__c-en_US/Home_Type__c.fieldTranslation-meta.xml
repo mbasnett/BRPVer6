@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- What type of home are you looking for? --></label>
+        <name>Home_Type__c</name>
+        <picklistValues>
+            <masterLabel>Apartment</masterLabel>
+            <translation><!-- Apartment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bungalow</masterLabel>
+            <translation><!-- Bungalow --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Townhouse</masterLabel>
+            <translation><!-- Townhouse --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Two-storey</masterLabel>
+            <translation><!-- Two-storey --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <layouts>
+        <layout>Account (Marketing) Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Account (Sales) Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Account (Support) Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Account Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- NEWSTAR Sync --></label>
+            <section>NEWSTAR Sync</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Customer Layout</layout>
+        <layoutType>PersonAccount</layoutType>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- NEWSTAR Sync --></label>
+            <section>NEWSTAR Sync</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Person Account Layout</layout>
+        <layoutType>PersonAccount</layoutType>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- NEWSTAR Sync --></label>
+            <section>NEWSTAR Sync</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Real Estate Agency</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- NEWSTAR Sync --></label>
+            <section>NEWSTAR Sync</section>
+        </sections>
+    </layouts>
+    <quickActions>
+        <label><!-- Child Account --></label>
+        <name>Child_Account</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Manage NEWSTAR Agency --></label>
+        <name>Manage_NEWSTAR_Agency</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Manage NEWSTAR Customer --></label>
+        <name>Manage_NEWSTAR_Customer</name>
+    </quickActions>
+    <recordTypes>
+        <label><!-- Business Account --></label>
+        <name>Business_Account</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Master --></label>
+        <name>Master</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Real Estate Agency --></label>
+        <name>Real_Estate_Agency</name>
+    </recordTypes>
+    <webLinks>
+        <label><!-- GoogleMaps --></label>
+        <name>GoogleMaps</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- GoogleNews --></label>
+        <name>GoogleNews</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- GoogleSearch --></label>
+        <name>GoogleSearch</name>
+    </webLinks>
+</CustomObjectTranslation>

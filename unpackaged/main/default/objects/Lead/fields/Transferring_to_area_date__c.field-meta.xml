@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+        <fullName>Transferring_to_area_date__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>If lead is transferring to the area, enter date they expect to transfer.</inlineHelpText>
+        <label>Transferring to area date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Date</type>
+    </CustomField>

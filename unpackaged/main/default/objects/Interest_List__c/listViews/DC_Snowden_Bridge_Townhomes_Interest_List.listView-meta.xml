@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+        <fullName>DC_Snowden_Bridge_Townhomes_Interest_List</fullName>
+        <filterScope>Queue</filterScope>
+        <label>DC Snowden Bridge Townhomes</label>
+        <queue>DC_Snowden_Bridge_Townhomes</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </ListView>

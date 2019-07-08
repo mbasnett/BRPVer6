@@ -1,0 +1,81 @@
+<aura:component implements="force:lightningQuickActionWithoutHeader,force:hasRecordId" controller="quickLeadCreate">
+	<aura:attribute name="newInterestList" type="Interest_List__c" default="{'sobjectType': 'Interest_List__c',
+                                                              'Marketing_Community__c':'',
+                                                              'Subdivision__c':'',
+                                                              'Sales_Office__c':'',
+                                                              'Visit_Date__c':'',
+                                                              'Lead_source__c':'',
+                                                              'OwnerId':'',
+                                                              'Stage__c':'New'
+                                                              }"/>
+     
+    <aura:attribute name="simpleNewInterestList" type="Object"/> 
+    <aura:attribute name="newInterestListError" type="String"/> 
+    <aura:attribute name="LeadsourcePicklist" type="String[]" />  
+    <aura:attribute name="Subdiv" type="List"/>
+    <aura:attribute name="Mktcommunity" type="List"/>
+    <aura:attribute name="SalesOffices" type="List"/>
+    <aura:attribute name="lead" type="Lead"/>
+    <aura:handler name="change" value="{!v.SalesOffices}" action="{!c.loadcommunity}" />
+    <aura:handler name="change" value="{!v.Mktcommunity}" action="{!c.loadProject}" />
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}" />
+ <lightning:card iconName="action:new" title="New Interest">
+    	<table width="1000px" >
+        	<tr>
+            <td width="10%"></td>
+            <td width="20%">
+            <lightning:select name="MktSalesOffSelect" aura:id="MktSalesOffSelect" required="true" label="SalesOffice"
+                              onchange="{!c.loadcommunity}" >
+                		<aura:iteration items="{!v.SalesOffices}" var="item">
+                           <option text="{!item.Sales_Office__r.Name}" value="{!item.Sales_Office__r.Id + '~' + item.Sales_Office__r.Name}"/> 
+         				</aura:iteration>
+    		</lightning:select>
+            </td>
+                <td width="10%"></td>
+            <td width="20%">
+            <lightning:select name="MktcommSelect" aura:id="MktcommSelect" required="true" label="Marketing Community"
+                      onchange="{!c.loadProject}" >
+                		<aura:iteration items="{!v.Mktcommunity}" var="item">
+            				<option text="{!item.Name}" value="{!item.Id + '~' + item.Name}"/>
+         				</aura:iteration>
+    		</lightning:select></td>
+        	</tr>
+        	<tr>
+            <td width="10%"></td>
+            <td width="20%">
+            <lightning:select name="SubdivSelect" aura:id="SubdivSelect"  label="Subdivision">
+         				<aura:iteration items="{!v.Subdiv}" var="item">
+            				<option text="{!item.Name}" value="{!item.Id}"/>
+         				</aura:iteration>
+    		</lightning:select>
+           </td>
+            <td width="10%"></td>
+            <td width="20%">
+             <lightning:select name="LeadsourceSelect" aura:id="LeadsourceSelect" label="Lead Source"  
+                              value="{!v.newInterestList.Lead_source__c}">
+                		<option value="">-- Please Select --</option>
+         				<aura:iteration items="{!v.LeadsourcePicklist}" var="item">
+            				<option value="{!item}">{!item}</option>
+         				</aura:iteration>
+    			</lightning:select>
+            </td>
+        	</tr>
+            &nbsp;
+            <tr>
+            <div class="slds-hide">
+            <td width="10%"></td>
+            <td width="20%"><lightning:input aura:Id="Owner"  value="{!v.newInterestList.OwnerId}"/></td>
+            </div>
+            <td width="10%"></td>
+            <td width="20%"><lightning:input aura:Id="Visitdate" label="Visit Date" type="date" value="{!v.newInterestList.Visit_Date__c}"/></td>
+            </tr>
+            <tr>
+           		<td colspan ="4" ><div class="slds-align_absolute-center">
+               		<lightning:button label="Cancel" onclick="{!c.handleCancel}" class="slds-m-top_medium" />
+               		<lightning:Button label="Save"   onclick="{!c.quickSave}" class="slds-m-top_small" variant="brand"/>
+               		</div>
+           		</td>
+       		</tr>
+    	</table>
+    </lightning:card> 
+</aura:component>

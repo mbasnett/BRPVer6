@@ -1,0 +1,34 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome" access="global" controller="quickLeadCreate" >
+    <aura:attribute name="fieldsList" type="List" />
+    <aura:attribute name="data" type="List"/>
+    <aura:attribute name="sObjectName" type="String"/>
+    <aura:attribute name="recordId" type="String"/>
+    <aura:handler event="c:navigate" action="{!c.loadrelatedList}"/>
+	<aura:registerEvent name="closemodaldialog" type="c:closePopup"/> 
+    <aura:attribute name="Name" type="String"/>
+    <div style="width:1000px">
+        <div class="slds-modal__header slds-theme--info">
+                	<button class="slds-button slds-button--icon-inverse slds-notify__close" onclick="{!c.closedialog}">
+                    	<c:svg ariaHidden="false" class="slds-button__icon slds-button__icon--large" xlinkHref="/resource/SLDSicons/assets/icons/action-sprite/svg/symbols.svg#close">
+                    	</c:svg>
+                    	<span class="slds-assistive-text">Close</span>
+                	</button>
+                	<h2 class="slds-text-heading--medium">{!v.Name}</h2>
+         </div>
+         <div>
+         <center>
+            <h1><b>{!v.sObjectName} 
+                </b>
+            </h1>
+         </center>
+         </div>
+         <div >
+  		    <lightning:datatable
+		    keyField="id"
+        	data="{!v.data}"
+        	columns="{!v.fieldsList}"
+        	hideCheckboxColumn="true"/>
+    	 </div>
+    </div>
+    
+</aura:component>

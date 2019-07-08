@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+        <fullName>TX_Interested_in_knowing_more_about__c</fullName>
+        <externalId>false</externalId>
+        <label>Interested in knowing more about</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Health and wellness</fullName>
+                    <default>false</default>
+                    <label>Health and wellness</label>
+                </value>
+                <value>
+                    <fullName>Food and Wine</fullName>
+                    <default>false</default>
+                    <label>Food and Wine</label>
+                </value>
+                <value>
+                    <fullName>Golf</fullName>
+                    <default>false</default>
+                    <label>Golf</label>
+                </value>
+                <value>
+                    <fullName>Arts and Culture</fullName>
+                    <default>false</default>
+                    <label>Arts and Culture</label>
+                </value>
+                <value>
+                    <fullName>Other</fullName>
+                    <default>false</default>
+                    <label>Other</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </CustomField>

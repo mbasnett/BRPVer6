@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+        <fullName>Lead_source__c</fullName>
+        <externalId>false</externalId>
+        <label>Lead source</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Advertisement</fullName>
+                    <default>false</default>
+                    <label>Advertisement</label>
+                </value>
+                <value>
+                    <fullName>Austin Relocation Guide</fullName>
+                    <default>false</default>
+                    <label>Austin Relocation Guide</label>
+                </value>
+                <value>
+                    <fullName>BDX</fullName>
+                    <default>false</default>
+                    <label>BDX</label>
+                </value>
+                <value>
+                    <fullName>Billboard</fullName>
+                    <default>false</default>
+                    <label>Billboard</label>
+                </value>
+                <value>
+                    <fullName>Brookfield Website</fullName>
+                    <default>false</default>
+                    <label>Brookfield Website</label>
+                </value>
+                <value>
+                    <fullName>Builder Boost</fullName>
+                    <default>false</default>
+                    <label>Builder Boost</label>
+                </value>
+                <value>
+                    <fullName>Customer Event</fullName>
+                    <default>false</default>
+                    <label>Customer Event</label>
+                </value>
+                <value>
+                    <fullName>Direct Mail</fullName>
+                    <default>false</default>
+                    <label>Direct Mail</label>
+                </value>
+                <value>
+                    <fullName>Driving By</fullName>
+                    <default>false</default>
+                    <label>Driving By</label>
+                </value>
+                <value>
+                    <fullName>Employee Referral</fullName>
+                    <default>false</default>
+                    <label>Employee Referral</label>
+                </value>
+                <value>
+                    <fullName>External Referral</fullName>
+                    <default>false</default>
+                    <label>External Referral</label>
+                </value>
+                <value>
+                    <fullName>Facebook</fullName>
+                    <default>false</default>
+                    <label>Facebook</label>
+                </value>
+                <value>
+                    <fullName>Facebook Lead Ad</fullName>
+                    <default>false</default>
+                    <label>Facebook Lead Ad</label>
+                </value>
+                <value>
+                    <fullName>Hot On Homes</fullName>
+                    <default>false</default>
+                    <label>Hot On Homes</label>
+                </value>
+                <value>
+                    <fullName>Interactive Sales Tool</fullName>
+                    <default>false</default>
+                    <label>Interactive Sales Tool</label>
+                </value>
+                <value>
+                    <fullName>Internal</fullName>
+                    <default>false</default>
+                    <label>Internal</label>
+                </value>
+                <value>
+                    <fullName>Internet</fullName>
+                    <default>false</default>
+                    <label>Internet</label>
+                </value>
+                <value>
+                    <fullName>Landing Page</fullName>
+                    <default>false</default>
+                    <label>Landing Page</label>
+                </value>
+                <value>
+                    <fullName>Lightbox</fullName>
+                    <default>false</default>
+                    <label>Lightbox</label>
+                </value>
+                <value>
+                    <fullName>Live Chat</fullName>
+                    <default>false</default>
+                    <label>Live Chat</label>
+                </value>
+                <value>
+                    <fullName>Master Plan/Community</fullName>
+                    <default>false</default>
+                    <label>Master Plan/Community</label>
+                </value>
+                <value>
+                    <fullName>Newspaper/Magazine</fullName>
+                    <default>false</default>
+                    <label>Newspaper/Magazine</label>
+                </value>
+                <value>
+                    <fullName>Online</fullName>
+                    <default>false</default>
+                    <label>Online</label>
+                </value>
+                <value>
+                    <fullName>Other</fullName>
+                    <default>false</default>
+                    <label>Other</label>
+                </value>
+                <value>
+                    <fullName>Paid Search</fullName>
+                    <default>false</default>
+                    <label>Paid Search</label>
+                </value>
+                <value>
+                    <fullName>Partner</fullName>
+                    <default>false</default>
+                    <label>Partner</label>
+                </value>
+                <value>
+                    <fullName>Partner Referral</fullName>
+                    <default>false</default>
+                    <label>Partner Referral</label>
+                </value>
+                <value>
+                    <fullName>PCR</fullName>
+                    <default>false</default>
+                    <label>PCR</label>
+                </value>
+                <value>
+                    <fullName>Phone Inquiry</fullName>
+                    <default>false</default>
+                    <label>Phone Inquiry</label>
+                </value>
+                <value>
+                    <fullName>Radio</fullName>
+                    <default>false</default>
+                    <label>Radio</label>
+                </value>
+                <value>
+                    <fullName>Real Estate Agent</fullName>
+                    <default>false</default>
+                    <label>Real Estate Agent</label>
+                </value>
+                <value>
+                    <fullName>Realtor</fullName>
+                    <default>false</default>
+                    <label>Realtor</label>
+                </value>
+                <value>
+                    <fullName>Referral</fullName>
+                    <default>false</default>
+                    <label>Referral</label>
+                </value>
+                <value>
+                    <fullName>Signage</fullName>
+                    <default>false</default>
+                    <label>Signage</label>
+                </value>
+                <value>
+                    <fullName>Social Media</fullName>
+                    <default>false</default>
+                    <label>Social Media</label>
+                </value>
+                <value>
+                    <fullName>Supra</fullName>
+                    <default>false</default>
+                    <label>Supra</label>
+                </value>
+                <value>
+                    <fullName>Television</fullName>
+                    <default>false</default>
+                    <label>Television</label>
+                </value>
+                <value>
+                    <fullName>Top Retirements</fullName>
+                    <default>false</default>
+                    <label>Top Retirements</label>
+                </value>
+                <value>
+                    <fullName>TourFactory</fullName>
+                    <default>false</default>
+                    <label>TourFactory</label>
+                </value>
+                <value>
+                    <fullName>Trade Show</fullName>
+                    <default>false</default>
+                    <label>Trade Show</label>
+                </value>
+                <value>
+                    <fullName>Vendor</fullName>
+                    <default>false</default>
+                    <label>Vendor</label>
+                </value>
+                <value>
+                    <fullName>Walk-in</fullName>
+                    <default>false</default>
+                    <label>Walk-in</label>
+                </value>
+                <value>
+                    <fullName>Walk-in Event</fullName>
+                    <default>false</default>
+                    <label>Walk-in Event</label>
+                </value>
+                <value>
+                    <fullName>Walk-in with Realtor</fullName>
+                    <default>false</default>
+                    <label>Walk-in with Realtor</label>
+                </value>
+                <value>
+                    <fullName>Website</fullName>
+                    <default>false</default>
+                    <label>Website</label>
+                </value>
+                <value>
+                    <fullName>Where To Retire</fullName>
+                    <default>false</default>
+                    <label>Where To Retire</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </CustomField>
