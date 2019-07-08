@@ -18,10 +18,12 @@ public class Hubspotcreationcalls
         Http http = new Http(); 
           try
             {
-
-            HTTPResponse res = http.send(req);
-            Integer retCode = res.getStatusCode();
-            String retMsg = res.getStatus();
+                HTTPResponse res = http.send(req);
+                Integer retCode = res.getStatusCode();
+                String retMsg = res.getStatus();
+                if(retcode==500)
+                {
+                }
             }
             catch(exception ex)
             {

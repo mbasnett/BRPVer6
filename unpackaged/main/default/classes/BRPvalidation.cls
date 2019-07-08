@@ -114,22 +114,22 @@ public with sharing class BRPvalidation
       system.debug(activevalue);
       system.debug(historyvalue);
       if(activevalue!=null)
-          lstcommunity = activevalue.split('\n');
+          lstcommunity = activevalue.split(';');
       if(historyvalue!=null)
-          lstcommunityHist = historyvalue.split('\n');
+          lstcommunityHist = historyvalue.split(';');
       if(lstcommunity.size()>0)
           {
               if(actiontype=='Insert')
                    {
                        if(lstCommunity.contains(val)==false)
-                          s.put(activelistfieldname, activevalue + '\n' + val);
+                          s.put(activelistfieldname, activevalue + ';' + val);
                    }
               else if(actiontype=='Delete')
                    {
                        lstcommunity.remove(lstCommunity.indexOf(val));
                        string newlist='';
                        for(integer i=0;i<lstcommunity.size();i++)
-                       newlist = newlist + '\n' + lstcommunity[i];
+                       newlist = newlist + ';' + lstcommunity[i];
                        s.put(activelistfieldname,newlist);                                 
                    }
 
@@ -146,7 +146,7 @@ public with sharing class BRPvalidation
                if(actiontype=='Insert')
                    {
                         if(lstcommunityHist.contains(val)==false)
-                             s.put(historylistfieldname  , historyvalue + '\n' + val);
+                             s.put(historylistfieldname  , historyvalue + ';' + val);
                    }
            }
         else

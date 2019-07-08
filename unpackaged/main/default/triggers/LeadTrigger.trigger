@@ -17,7 +17,9 @@ trigger LeadTrigger on Lead (before Delete,before insert, after insert) {
            for(sobject s:trigger.new)
            {
                string nameval=BRPValidation.getsalesofficename(s);
-               brpval.genericInterestcreation(s,'Insert',(string) s.get('Community_Picklist_'+ nameval +'__c'), 'Interested_Communtiy_' + nameval +'__c', 'Interested_Community_history_' + nameval +'__c');
+               brpval.genericInterestcreation(s,'Insert',(string) s.get('Community_Picklist_'+ nameval +'__c'), 'Community_List_' + nameval +'__c', 'Community_History_' + nameval +'__c');
+               lead ld=(lead) s;
+               //ld.company='brookfield';
            }
            //new BRPValidation().CommunityInterestcreation(trigger.new,null,'Insert');
        }

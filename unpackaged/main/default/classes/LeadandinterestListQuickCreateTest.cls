@@ -69,8 +69,8 @@ private class LeadandinterestListQuickCreateTest
         test.stopTest();
         list<Interest_list__c> lstintlst=[select id from Interest_list__c where lead__c =:ld.Id];
         system.assertEquals(1,lstintlst.size());
-        list<beback__c> beback=[select id from beback__c where Community_of_Interest__c =:intlst1.Id];
-        system.assertEquals(1,beback.size());
+        //list<beback__c> beback=[select id from beback__c where Community_of_Interest__c =:intlst1.Id];
+        //system.assertEquals(1,beback.size());
         
     }
     static testmethod void testNotDuplicateInterestList()
@@ -91,8 +91,8 @@ private class LeadandinterestListQuickCreateTest
         test.stopTest();
         list<Interest_list__c> lstintlst=[select id from Interest_list__c where lead__c =:ld.Id];
         system.assertEquals(2,lstintlst.size());
-        list<beback__c> beback=[select id from beback__c where Community_of_Interest__c =:intlst1.Id];
-        system.assertEquals(0,beback.size());
+        //list<beback__c> beback=[select id from beback__c where Community_of_Interest__c =:intlst1.Id];
+       // system.assertEquals(0,beback.size());
         
     }
     static testmethod void testDuplicateAccountWithNewOpportunity()

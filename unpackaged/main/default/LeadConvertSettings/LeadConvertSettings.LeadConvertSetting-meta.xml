@@ -12,16 +12,16 @@
     <objectMapping>
         <inputObject>Lead</inputObject>
         <mappingFields>
-            <inputField>Community_Picklist_Wsh__c</inputField>
-            <outputField>Community_Picklist_Wsh__c</outputField>
+            <inputField>Community_History_Wash__c</inputField>
+            <outputField>Community_History_Wash__c</outputField>
         </mappingFields>
         <mappingFields>
-            <inputField>Interested_Community_history_WSH__c</inputField>
-            <outputField>Interested_Community_history_WSH__c</outputField>
+            <inputField>Community_List_Wash__c</inputField>
+            <outputField>Community_List_Wash__c</outputField>
         </mappingFields>
         <mappingFields>
-            <inputField>Interested_Communtiy_WSH__c</inputField>
-            <outputField>Interested_Communtiy_WSH__c</outputField>
+            <inputField>Community_Picklist_Wash__c</inputField>
+            <outputField>Community_Picklist_Wash__c</outputField>
         </mappingFields>
         <outputObject>Contact</outputObject>
     </objectMapping>

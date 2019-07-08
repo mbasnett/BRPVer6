@@ -10,14 +10,14 @@ public with sharing class LeadandAccountTriggerHandler
                 if(lcr.isSuccess())
                 {
                     Id AccountId=lcr.getAccountId();
-                    Account acc=[select Id, recordtypeId,FirstName,LastName,sales_office_mapping__c from  Account where Id=: AccountId];
-                    acc.recordtypeId=account.SObjectType.getDescribe().getRecordTypeInfosByName().get('Customer').getRecordTypeId();
-                    update acc;
-                    sobject s=ld;
-                    string nameval=BRPValidation.getsalesofficename(acc);
+                    
+                    //acc.recordtypeId=account.SObjectType.getDescribe().getRecordTypeInfosByName().get('Customer').getRecordTypeId();
+                    //update acc;
+                    //sobject s=ld;
+                    string nameval=BRPValidation.getsalesofficename(ld.sales_office_mapping__c);
+                    Account acc=Database.query('select Id,recordtypeId,FirstName,LastName,sales_office_mapping__c,community_picklist_' + nameval+'__pc from  Account where Id=: AccountId');
                     ValidateExistingopportunities(acc);
-                    HS_Create_Lead__e event=new HS_Create_Lead__e(recordid__c=AccountId);
-                    Eventbus.publish(event);
+                    
                     //return AccountId;
                 }
             }
@@ -70,18 +70,22 @@ public with sharing class LeadandAccountTriggerHandler
                //    opp.Real_Estate_Agent__c=intLst.Realtor__c;
                opp.Sales_Office__c=mktcommobj.sales_office__c;
                opp.Scenario_Name__c='Default Scenario';
-               lstopp.add(opp);
-               insert lstOpp;
-       list<OpportunityContactRole> lstoppconrole=new list<OpportunityContactRole>();
-        for(Opportunity o : lstOpp)
-        {
-            OpportunityContactRole ocr = new OpportunityContactRole();
-            ocr.OpportunityId = o.Id;
-            ocr.ContactId = lstcontact[0].Id;
-            ocr.Role = 'Primary Buyer';
-            lstoppconrole.add(ocr);
-        }
-        insert lstoppconrole;
+               //lstopp.add(opp);
+               insert Opp;
+               list<OpportunityContactRole> lstoppconrole=new list<OpportunityContactRole>();
+               //for(Opportunity o : lstOpp)
+                //{
+                    OpportunityContactRole ocr = new OpportunityContactRole();
+                    ocr.OpportunityId = opp.Id;
+                    ocr.ContactId = lstcontact[0].Id;
+                    ocr.Role = 'Primary Buyer';
+                    lstoppconrole.add(ocr);
+               // }
+               insert lstoppconrole;
+               string query='select Id from Group where Name like \'%'+ String.escapeSingleQuotes(mktcomm)  +'\' and Type = \'Regular\'';
+               system.debug(query);
+               Group u =Database.query(query);
+               OpportunitySharing.manualShareRead(opp.Id,u.Id);
         }
         catch(exception ex)
         {
@@ -97,6 +101,7 @@ public with sharing class LeadandAccountTriggerHandler
        Id OppId;
        sobject s=acc;
        string nameval=BRPValidation.getsalesofficename(s);
+       system.debug((string) s.get('Community_Picklist_'+ nameval +'__pc'));
        Id mktcommId= cachedcollections.myCommunityMap.get((string) s.get('Community_Picklist_'+ nameval +'__pc')).Id;
        List<Opportunity> opplistexist=BRPvalidation.OpportunityExists(acc.Id,mktcommId);
        if(opplistexist.size()>0)
@@ -132,5 +137,7 @@ public with sharing class LeadandAccountTriggerHandler
             createOpportunities(acc,(string) s.get('Community_Picklist_'+ nameval +'__pc'));
  
         }
+        HS_Create_Lead__e event=new HS_Create_Lead__e(recordid__c=acc.Id);
+        Eventbus.publish(event);
   }
 }

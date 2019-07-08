@@ -37,13 +37,13 @@ public inherited sharing class quickLeadCreate
                     }
                     else
                     {
-                        beback__c bebacknote=new beback__c();
+                       /* beback__c bebacknote=new beback__c();
                         bebacknote.Is_Be_Back__c=true;
                         bebacknote.Opportunity__c=OppId;
                         bebacknote.visit_date__c=date.today();
                         bebacknote.notes__c='customer returned for more information';
                         bebacknote.name='Note for ' + Cachedcollections.mysubdivisionIdMap.get(intLstobj.subdivision__c);
-                        insert bebacknote;
+                        insert bebacknote;*/
                     }
                  }
                  else
@@ -82,13 +82,13 @@ public inherited sharing class quickLeadCreate
                     }
                     else
                     {
-                        beback__c bebacknote=new beback__c();
+                        /*beback__c bebacknote=new beback__c();
                         bebacknote.Is_Be_Back__c=true;
                         bebacknote.Community_of_Interest__c=intlistid;
                         bebacknote.visit_date__c=date.today();
                         bebacknote.notes__c='customer returned for more information';
                         bebacknote.name='Note for ' + Cachedcollections.mysubdivisionIdMap.get(intLstobj.marketing_community__c);
-                        insert bebacknote;
+                        insert bebacknote;*/
                     }
                 }
                 else

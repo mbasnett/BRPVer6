@@ -84,7 +84,7 @@ public inherited sharing class LeadConvertController
         }
         insert lstOpp;
         list<cobuyer__c> lstCobuyer = [select Id,recordtypeId,Opportunity__c,interest_list__c from Cobuyer__c where Interest_list__c in :setIntlst];
-        list<beback__c> lstnotes = [select Id,Opportunity__c,Community_of_Interest__c from beback__c where Community_of_Interest__c in :setIntlst];
+        //list<beback__c> lstnotes = [select Id,Opportunity__c,Community_of_Interest__c from beback__c where Community_of_Interest__c in :setIntlst];
         for(Cobuyer__c coby:lstCobuyer )
         {
             coby.recordtypeId=CobuyerRecordTypeaMap.get('Opportunity').getRecordTypeId();
@@ -96,7 +96,7 @@ public inherited sharing class LeadConvertController
             }
         }
         update lstCobuyer;
-        for(beback__c n: lstnotes)
+        /*for(beback__c n: lstnotes)
         {
             if(mpopp.containskey(n.Community_of_Interest__c))
             {
@@ -105,7 +105,7 @@ public inherited sharing class LeadConvertController
                 n.opportunity__c=lstOpp[mpopp.get(n.Community_of_Interest__c)].Id;
             }
         }
-        update lstnotes;
+        update lstnotes;*/
         list<OpportunityContactRole> lstoppconrole=new list<OpportunityContactRole>();
         for(Opportunity opp : lstOpp)
         {
